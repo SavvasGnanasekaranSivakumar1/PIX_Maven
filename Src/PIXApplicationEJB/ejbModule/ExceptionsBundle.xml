@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <Exceptions>
+ 
+ <Error id="9000">
+  <Message>Sorry. An unexpected error occurred in processing your request</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9001">
+  <Message>Sorry. The current Database operation has failed</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9002">
+  <Message>Unable to invoke remote services</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9003">
+  <Message>Component not registered</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9004">
+  <Message>Unable to initialize remote services</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9005">
+  <Message>I/O Exception: Unable to write ModuleLink file: Make sure that file is not in use</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9006">
+  <Message>Installation problem</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9007">
+  <Message>Session Integrity Error</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ <Error id="9008">
+  <Message>Installation problem</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+   
+  <Error id="9009">
+  <Message>Installation problem</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+   <Error id="9010">
+  <Message>System error Occurred in sending mail</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+  
+  <Error id="9011">
+  <Message>Mail Server Not Responding</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+  
+   <Error id="9012">
+  <Message>Save Operation failed</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>  
+  
+  <Error id="9013">
+  <Message>File Not Found Exception</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>  
+   
+  <Error id="9014">
+  <Message>Servlet Exception</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+  <Error id="9017">
+  <Message>The thread was interrupted by some other thread</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+  <Error id="9020">
+  <Message>No Records Found</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9021">
+  <Message>Date Conversion Error</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9022">
+  <Message>Currently there are no User records to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+ 
+	 <Error id="9023">
+  <Message>Currently there are no Publisher records to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+
+ <Error id="9024">
+  <Message>Currently there are no planning messages to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+   <Error id="9025">
+  <Message>Currently there are no orders to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+  
+
+  <Error id="9026">
+  <Message>Currently there is no order detail to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9027">
+  <Message>Currently there are no book specifications to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9028">
+  <Message>Currently there are no reports to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9029">
+  <Message>Currently there are no inventory details to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+   <Error id="9030">
+  <Message>Currently there are no delivery messages to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+   <Error id="9031">
+  <Message>Currently there are no goods receipts to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9032">
+  <Message>Currently there are no Order Status to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+   <Error id="9033">
+  <Message>Currently there are no Usages to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+   <Error id="9034">
+  <Message>Currently there is no planning detail to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>
+
+  <Error id="9035">
+  <Message>Currently there are no Supplier records to display</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>	
+
+
+   <Error id="9037">
+  <Message>Can't post Good Receipt as no Delivery Message Exists</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>	
+
+   <Error id="9038">
+  <Message>Currently there is no Mismatchreport for this PurchaseOrder</Message> 
+  <Severity value="Error" /> 
+  <Type value="System" /> 
+  </Error>	
+
+    <Error id="9046">
+  <Message>Currently there are no records to display</Message>   
+  <Severity value="Error" /> 
+  <Type value="System" />   
+  </Error>
+
+  <!-- IOB Exceptions begin here -->
+  
+  <Error id="5001">
+  	<Message>Invalid username, Please try again.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+
+  <Error id="5002">
+  	<Message>Invalid password, Please try again (Password is case sensitive).</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+
+  <Error id="5003">
+  	<Message>Your account is locked, please contact the Functional Manager.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+  
+  <Error id="5004">
+  	<Message>Associated role is not found, contact the Functional Manager.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+  
+  <Error id="5005">
+  	<Message>Invalid Supplier Company.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+  
+  <Error id="5006">
+  	<Message>Password could not be changed.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+
+  <Error id="5007">
+  	<Message>Profile could not be changed.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>  
+
+ <Error id="5015">
+  	<Message>UserName already in use . Try another user name</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>
+
+<Error id="5016">
+  	<Message>There is no Supplier Company corresponding to the Supplier ID entered .  </Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+  </Error>
+<Error id="5017">
+  	<Message>Subsidiary Initials already in use  </Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5018">
+  	<Message>Product Group Name already in use . Please try another group name  </Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5019">
+  	<Message>Buyer Group Name already in use . Please try another group name  </Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5020">
+  	<Message>Inquiry/Offer in the meantime is updated by another user. Please try again.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5021">
+  	<Message>Entered email address already in use.You may add another user</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5023">
+  	<Message>ERROR in reading property file..</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5024">
+  	<Message>zip path is not defined..</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+  
+<Error id="5025">
+  	<Message>The entered values entered already exist in the table , please modify the values</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5026">
+  	<Message>Corresponding data in parent tables are not present,please enter the referential data in the master table first</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5027">
+  	<Message>You cannot update this row since this is data is referenced by other tables</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5028">
+  	<Message>An attempt was made to insert a NULL into the column with NOT NULL constraint</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5029">
+  	<Message>E-Catalogue is getting updated. Please try again.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5030">
+  	<Message>San Already exists.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5031">
+  	<Message>User Already exists.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+<Error id="5032">
+  	<Message>The data has been modified by another user.</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+
+<Error id="9036">
+  	<Message>Error occured while opening pdf</Message> 
+  	<Severity value="Error" /> 
+  	<Type value="System" /> 
+</Error>
+
+
+ </Exceptions>

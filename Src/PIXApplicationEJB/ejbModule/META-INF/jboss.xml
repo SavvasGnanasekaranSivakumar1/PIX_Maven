@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jboss PUBLIC "-//JBoss//DTD JBOSS 4.0//EN" "http://www.jboss.org/j2ee/dtd/jboss_4_0.dtd">
+
+<jboss>
+
+   <enterprise-beans>
+
+     <!--
+       To add beans that you have deployment descriptor info for, add
+       a file to your XDoclet merge directory called jboss-beans.xml that contains
+       the <session></session>, <entity></entity> and <message-driven></message-driven>
+       markup for those beans.
+     -->
+	  <session>
+         <ejb-name>Admin</ejb-name>
+         <local-jndi-name>AdminLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+	  
+      <session>
+         <ejb-name>Inventory</ejb-name>
+         <jndi-name>Inventory</jndi-name>
+         <local-jndi-name>InventoryLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>BookSpec</ejb-name>
+         <jndi-name>BookSpec</jndi-name>
+         <local-jndi-name>BookSpecLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>OrderStatus</ejb-name>
+         <jndi-name>OrderStatus</jndi-name>
+         <local-jndi-name>OrderStatusLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>Usage</ejb-name>
+         <jndi-name>Usage</jndi-name>
+         <local-jndi-name>UsageLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>Report</ejb-name>
+         <jndi-name>Report</jndi-name>
+         <local-jndi-name>ReportLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>DeliveryMessage</ejb-name>
+         <jndi-name>DeliveryMessage</jndi-name>
+         <local-jndi-name>DeliveryMessageLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>PurchaseOrder</ejb-name>
+         <local-jndi-name>PurchaseOrderLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>GoodsReceipt</ejb-name>
+         <jndi-name>GoodsReceipt</jndi-name>
+         <local-jndi-name>GoodsReceiptLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      <session>
+         <ejb-name>Planning</ejb-name>
+         <jndi-name>Planning</jndi-name>
+         <local-jndi-name>PlanningLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>PotentialARP</ejb-name>
+         <jndi-name>PotentialARP</jndi-name>
+         <local-jndi-name>PotentialARPLocal</local-jndi-name>  
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+
+      <session>
+         <ejb-name>HomePage</ejb-name>
+         <jndi-name>HomePage</jndi-name>
+         <local-jndi-name>HomePageLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>ExportToExcel</ejb-name>
+         <jndi-name>ExportToExcel</jndi-name>
+         <local-jndi-name>ExportToExcelLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>FileUploading</ejb-name>
+         <jndi-name>FileUploading</jndi-name>
+         <local-jndi-name>FileUploadingLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>CostAccounting</ejb-name>
+         <jndi-name>CostAccounting</jndi-name>
+         <local-jndi-name>CostAccountingLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>MismatchReport</ejb-name>
+         <jndi-name>MismatchReport</jndi-name>
+         <local-jndi-name>MismatchReportLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+      <session>
+         <ejb-name>ReleaseToPIX</ejb-name>
+         <local-jndi-name>ReleaseToPIXLocal</local-jndi-name>
+        <method-attributes>
+        </method-attributes>
+      </session>
+      
+       <session>
+         <ejb-name>Dropship</ejb-name>
+         <jndi-name>DropShip</jndi-name>
+         <local-jndi-name>DropShipLocal</local-jndi-name>
+
+        <method-attributes>
+        </method-attributes>
+      </session>
+    <!--
+      write a merge file jboss-webservices.ent for webservice-description 
+    -->
+
+   </enterprise-beans>
+
+     <!--
+       To specify your own assembly descriptor info here, add a file to your
+       XDoclet merge directory called jboss-assembly-descriptor.xml that contains
+       the <assembly-descriptor></assembly-descriptor> markup.
+     -->
+   <assembly-descriptor>
+    <!-- message destinations -->
+     <!--
+       To specify additional message-destination elements, add a file in the merge
+       directory called jboss-message-destinations.ent that contains them.
+     -->
+   </assembly-descriptor>
+
+   <resource-managers>
+   </resource-managers>
+
+  <!--
+    | for container settings, you can merge in jboss-container.xml
+    | this can contain <invoker-proxy-bindings/> and <container-configurations/>
+  -->
+
+</jboss>

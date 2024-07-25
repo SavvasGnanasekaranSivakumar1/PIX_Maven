@@ -1,0 +1,15 @@
+<ajaxConfig>
+  <group ajaxRef="page">
+    <element ajaxRef="checkUploadStatus">
+      <event type="timer">
+        <requestHandler type="std:SimpleRequest" method="post">
+           <target>/UploadStatus</target>
+           <parameter/>
+        </requestHandler>
+        <responseHandler type="std:InnerHTML">
+            <parameter>messageDiv</parameter>
+        </responseHandler>
+      </event>
+    </element>
+  </group> 
+</ajaxConfig>

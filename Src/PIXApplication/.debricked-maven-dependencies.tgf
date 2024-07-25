@@ -1,0 +1,158 @@
+786116491 PIXApplication:PIXApplication:ear:0.0.1-SNAPSHOT
+1933513621 PIXApplicationEJB:PIXApplicationEJB:ejb:0.0.1-SNAPSHOT:compile
+568239889 org.apache.logging.log4j:log4j-core:jar:2.17.1:compile
+2004013670 org.apache.logging.log4j:log4j-api:jar:2.17.1:compile
+10624116 org.apache.logging.log4j:log4j:pom:2.17.1:compile
+193598542 org.apache.logging.log4j:log4j-web:jar:2.17.1:compile
+1605950465 javax.activation:activation:jar:1.1:compile
+1043907698 com.oracle.toplink:toplink:jar:10.1.3.0.0.060118:compile
+787033725 antlr:antlr:jar:2.7.6:compile
+1973053322 commons-logging:commons-logging:jar:1.0.4:compile
+1826350572 org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec:jar:2.0.0.Final:compile
+347645777 axis:axis:jar:1.2.1:compile
+1933965693 wsdl4j:wsdl4j:jar:1.5.1:compile
+1430611624 batik:batik-awt-util:jar:1.6:compile
+1711410537 batik:batik-dom:jar:1.6:compile
+928099543 batik:batik-svggen:jar:1.6:compile
+1803756881 batik:batik-util:jar:1.6:compile
+353201839 batik:batik-xml:jar:1.6:compile
+1662140450 org.codehaus.castor:castor:jar:1.1:compile
+1495232387 cglib:cglib-full:jar:2.0.2:compile
+725901404 javax.transaction:jta:jar:1.0.1B:compile
+1430395789 log4j:log4j:jar:1.2.13:compile
+614482519 xerces:xerces:jar:1.4.0:compile
+107041335 javax.mail:mail:jar:1.5.0-b01:compile
+246383655 org.codehaus.castor:castor-xml:jar:1.3.1:compile
+1274308620 org.codehaus.castor:castor-core:jar:1.3.1:compile
+1835022815 cewolf:cewolf:jar:1.0:compile
+1629241006 crimson:crimson:jar:1.1.3:compile
+333447190 jfree:jfreechart:jar:1.0.0:compile
+2067578478 jfree:jcommon:jar:1.0.0:compile
+394190359 commons-beanutils:commons-beanutils:jar:1.6:compile
+387410712 commons-codec:commons-codec:jar:1.3:compile
+82065756 com.oracle:classes12:jar:10.2.0.2.0:compile
+448084064 commons-collections:commons-collections:jar:2.1:compile
+2069545799 commons-digester:commons-digester:jar:1.6:compile
+1471756447 xml-apis:xml-apis:jar:1.0.b2:compile
+1924318701 commons-discovery:commons-discovery:jar:0.2:compile
+1106740707 commons-fileupload:commons-fileupload:jar:1.0:compile
+1822045793 commons-httpclient:commons-httpclient:jar:3.0:compile
+1920566957 junit:junit:jar:3.8.1:compile
+369141922 commons-io:commons-io:jar:1.3.1:compile
+1797648156 commons-lang:commons-lang:jar:1.0.1:compile
+1454499111 commons-validator:commons-validator:jar:1.1.4:compile
+1757629874 dom4j:dom4j:jar:1.4:compile
+2073410992 jaxen:jaxen:jar:1.0-FCS:compile
+1057808593 saxpath:saxpath:jar:1.0-FCS:compile
+1716368074 msv:msv:jar:20020414:compile
+345099628 relaxngDatatype:relaxngDatatype:jar:20020414:compile
+1111460467 isorelax:isorelax:jar:20020414:compile
+451801229 com.lowagie:itext:jar:1.4:compile
+289262328 gnujaxp:gnujaxp:jar:1.0.0:compile
+190684958 releasetopixdto_PIX:releasetopixdto_PIX:jar:0.0.1-SNAPSHOT:compile
+890236948 javax.transaction:javax.transaction-api:jar:1.2:compile
+1074993056 jakarta.persistence:jakarta.persistence-api:jar:2.2.3.redhat-00001:compile
+1065774928 org.jboss.spec.javax.transaction:jboss-transaction-api_1.3_spec:jar:2.0.0.Final-redhat-00002:compile
+1480893137 org.jboss:jboss-ejb-client:jar:4.0.37.Final:compile
+302085789 org.jboss.marshalling:jboss-marshalling:jar:2.0.6.Final:compile
+1257758058 org.jboss.marshalling:jboss-marshalling-river:jar:2.0.6.Final:compile
+1174919051 org.jboss.xnio:xnio-api:jar:3.8.2.Final:compile
+992524208 org.jboss.threads:jboss-threads:jar:2.3.3.Final:compile
+570723286 org.jboss.xnio:xnio-nio:jar:3.8.2.Final:compile
+1449926257 org.jboss.remoting:jboss-remoting:jar:5.0.17.Final:compile
+774840504 org.jboss.logging:jboss-logging:jar:3.4.0.Final:compile
+1346672634 org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:jar:1.0.0.Final:compile
+1444477983 org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final:compile
+1622277947 org.wildfly.client:wildfly-client-config:jar:1.0.1.Final:compile
+927742325 org.wildfly.common:wildfly-common:jar:1.5.1.Final:compile
+1136890657 org.wildfly.discovery:wildfly-discovery-client:jar:1.2.1.Final:compile
+1386903362 org.wildfly.security:wildfly-elytron:jar:1.1.5.Final:compile
+1024266763 org.wildfly.transaction:wildfly-transaction-client:jar:1.1.10.Final:compile
+1801196366 org.wildfly:wildfly-naming-client:jar:1.0.13.Final:compile
+886693791 org.jboss.jbossts:jbossjta:jar:4.16.6.Final:compile
+902348321 struts:struts:jar:1.2.7:compile
+1619034073 commons-chain:commons-chain:jar:1.0:compile
+1808652004 oro:oro:jar:2.0.8:compile
+294832421 org.apache.struts:struts-el:jar:1.2.9:compile
+1633375360 org.apache.struts:struts-legacy:jar:1.1:compile
+38179269 poi:poi-2.5.1-final:jar:20040804:compile
+129572255 PIXApplicationWeb:PIXApplicationWeb:war:0.0.1-SNAPSHOT:compile
+#
+568239889 2004013670 compile
+1933513621 568239889 compile
+1933513621 10624116 compile
+1933513621 193598542 compile
+1933513621 1605950465 compile
+1933513621 1043907698 compile
+1933513621 787033725 compile
+1933513621 1973053322 compile
+1933513621 1826350572 compile
+347645777 1933965693 compile
+1933513621 347645777 compile
+1933513621 1430611624 compile
+1933513621 1711410537 compile
+1933513621 928099543 compile
+1933513621 1803756881 compile
+1933513621 353201839 compile
+1662140450 1495232387 compile
+1662140450 725901404 compile
+1662140450 1430395789 compile
+1662140450 614482519 compile
+1933513621 1662140450 compile
+1933513621 107041335 compile
+246383655 1274308620 compile
+1933513621 246383655 compile
+1835022815 1629241006 compile
+1835022815 333447190 compile
+1835022815 2067578478 compile
+1933513621 1835022815 compile
+1933513621 394190359 compile
+1933513621 387410712 compile
+1933513621 82065756 compile
+1933513621 448084064 compile
+2069545799 1471756447 compile
+1933513621 2069545799 compile
+1933513621 1924318701 compile
+1933513621 1106740707 compile
+1822045793 1920566957 compile
+1933513621 1822045793 compile
+1933513621 369141922 compile
+1933513621 1797648156 compile
+1933513621 1454499111 compile
+1757629874 2073410992 compile
+1757629874 1057808593 compile
+1757629874 1716368074 compile
+1757629874 345099628 compile
+1757629874 1111460467 compile
+1933513621 1757629874 compile
+1933513621 451801229 compile
+1933513621 289262328 compile
+1933513621 190684958 compile
+1933513621 890236948 compile
+1933513621 1074993056 compile
+1933513621 1065774928 compile
+1480893137 302085789 compile
+1480893137 1257758058 compile
+1174919051 992524208 compile
+1480893137 1174919051 compile
+1480893137 570723286 compile
+1480893137 1449926257 compile
+1480893137 774840504 compile
+1480893137 1346672634 compile
+1480893137 1444477983 compile
+1480893137 1622277947 compile
+1480893137 927742325 compile
+1480893137 1136890657 compile
+1480893137 1386903362 compile
+1480893137 1024266763 compile
+1480893137 1801196366 compile
+1933513621 1480893137 compile
+1933513621 886693791 compile
+902348321 1619034073 compile
+902348321 1808652004 compile
+1933513621 902348321 compile
+1933513621 294832421 compile
+1933513621 1633375360 compile
+1933513621 38179269 compile
+786116491 1933513621 compile
+786116491 129572255 compile

@@ -1,0 +1,242 @@
+1413020227 PIXApplicationWeb:PIXApplicationWeb:war:0.0.1-SNAPSHOT
+1361755941 org.apache.logging.log4j:log4j-core:jar:2.17.1:compile
+1364898802 org.apache.logging.log4j:log4j-api:jar:2.17.1:compile
+1829651877 org.apache.logging.log4j:log4j:pom:2.17.1:compile
+2121744549 org.apache.logging.log4j:log4j-web:jar:2.17.1:compile
+2057313241 javax.activation:activation:jar:1.1:compile
+2120344156 com.oracle.toplink:toplink:jar:10.1.3.0.0.060118:compile
+1633530712 antlr:antlr:jar:2.7.6:compile
+627815870 commons-logging:commons-logging:jar:1.0.4:compile
+1609501721 org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec:jar:2.0.0.Final:compile
+778925754 javax.ejb:ejb-api:jar:3.0:provided
+581359452 axis:axis:jar:1.2.1:compile
+1519927539 batik:batik-awt-util:jar:1.6:compile
+2100297853 batik:batik-dom:jar:1.6:compile
+942502343 batik:batik-svggen:jar:1.6:compile
+749030825 batik:batik-util:jar:1.6:compile
+883035926 batik:batik-xml:jar:1.6:compile
+1231864343 org.codehaus.castor:castor:jar:1.1:compile
+438051252 cglib:cglib-full:jar:2.0.2:compile
+483589979 log4j:log4j:jar:1.2.13:compile
+950831464 javax.mail:mail:jar:1.5.0-b01:compile
+402622480 org.codehaus.castor:castor-xml:jar:1.3.1:compile
+1821711066 org.codehaus.castor:castor-core:jar:1.3.1:compile
+1739986996 cewolf:cewolf:jar:1.0:compile
+990722659 crimson:crimson:jar:1.1.3:compile
+1348045338 jfree:jfreechart:jar:1.0.0:compile
+350099713 commons-beanutils:commons-beanutils:jar:1.6:compile
+1132385302 commons-codec:commons-codec:jar:1.3:compile
+301084728 com.oracle:classes12:jar:10.2.0.2.0:compile
+233271622 commons-collections:commons-collections:jar:2.1:compile
+1763010538 commons-digester:commons-digester:jar:1.6:compile
+1560203450 commons-discovery:commons-discovery:jar:0.2:compile
+1552767213 commons-fileupload:commons-fileupload:jar:1.1:compile
+1784053627 org.apache.commons:fileupload-ext:jar:1.0:compile
+683573228 commons-httpclient:commons-httpclient:jar:3.0:compile
+40829249 junit:junit:jar:3.8.1:compile
+873688017 commons-io:commons-io:jar:1.3.1:compile
+1843885967 commons-lang:commons-lang:jar:1.0.1:compile
+914175168 commons-validator:commons-validator:jar:1.1.4:compile
+1289903687 dom4j:dom4j:jar:1.4:compile
+1669392873 jaxen:jaxen:jar:1.0-FCS:compile
+890085657 saxpath:saxpath:jar:1.0-FCS:compile
+1778993228 msv:msv:jar:20020414:compile
+885465900 relaxngDatatype:relaxngDatatype:jar:20020414:compile
+1357663228 isorelax:isorelax:jar:20020414:compile
+145833361 com.lowagie:itext:jar:1.4:compile
+677007331 gnujaxp:gnujaxp:jar:1.0.0:compile
+629790599 releasetopixdto_PIX:releasetopixdto_PIX:jar:0.0.1-SNAPSHOT:compile
+394840929 javax.transaction:javax.transaction-api:jar:1.2:compile
+383005108 jakarta.persistence:jakarta.persistence-api:jar:2.2.3.redhat-00001:compile
+1812681178 org.jboss.spec.javax.transaction:jboss-transaction-api_1.3_spec:jar:2.0.0.Final-redhat-00002:compile
+123045427 org.jboss:jboss-ejb-client:jar:4.0.37.Final:compile
+1448580731 org.jboss.marshalling:jboss-marshalling:jar:2.0.6.Final:compile
+1631143060 org.jboss.marshalling:jboss-marshalling-river:jar:2.0.6.Final:compile
+1468685544 org.jboss.xnio:xnio-api:jar:3.8.2.Final:compile
+2084912180 org.jboss.threads:jboss-threads:jar:2.3.3.Final:compile
+382441865 org.jboss.xnio:xnio-nio:jar:3.8.2.Final:compile
+1040015904 org.jboss.remoting:jboss-remoting:jar:5.0.17.Final:compile
+940905579 org.jboss.logging:jboss-logging:jar:3.4.0.Final:compile
+1843674049 org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:jar:1.0.0.Final:compile
+665448485 org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final:compile
+1905486482 org.wildfly.client:wildfly-client-config:jar:1.0.1.Final:compile
+1630903943 org.wildfly.common:wildfly-common:jar:1.5.1.Final:compile
+767794003 org.wildfly.discovery:wildfly-discovery-client:jar:1.2.1.Final:compile
+1157856790 org.wildfly.security:wildfly-elytron:jar:1.1.5.Final:compile
+791563230 org.wildfly.transaction:wildfly-transaction-client:jar:1.1.10.Final:compile
+1646410010 org.wildfly:wildfly-naming-client:jar:1.0.13.Final:compile
+1401564942 org.jboss.jbossts:jbossjta:jar:4.16.6.Final:compile
+220661927 struts:struts:jar:1.2.7:compile
+1351275110 commons-chain:commons-chain:jar:1.0:compile
+588503940 oro:oro:jar:2.0.8:compile
+560165559 org.apache.struts:struts-el:jar:1.2.9:compile
+347354124 org.apache.struts:struts-legacy:jar:1.1:compile
+313249054 poi:poi-2.5.1-final:jar:20040804:compile
+802814772 jfree:jcommon:jar:1.0.0:compile
+362140338 jdbc.sybase:jconn3:jar:6.0:compile
+540315736 org.jdom:jdom:jar:1.0:compile
+1824225917 org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.3_spec:jar:2.0.0.Final-redhat-00001:provided
+215694469 org.json:json:jar:20080701:compile
+929066990 javax.xml.bind:jsr173_api:jar:1.0:compile
+869437194 javax.servlet:jstl:jar:1.1.2:compile
+76379039 javax.transaction:jta:jar:1.1:compile
+1374115999 org.apache.poi:poi:jar:3.0.2-FINAL:compile
+1707889234 taglibs:standard:jar:1.1.2:compile
+1119955774 stax:stax-api:jar:1.0.1:compile
+767535474 wsdl4j:wsdl4j:jar:1.5.1:compile
+1190608890 org.codehaus.woodstox:wstx-asl:jar:3.2.0:compile
+1101970356 ooservice-ws:ooservice-ws:jar:0.0.1-SNAPSHOT:compile
+184410212 pims-ws:pims-ws:jar:0.0.1-SNAPSHOT:compile
+1515793520 PIXApplicationEJB:PIXApplicationEJB:ejb:0.0.1-SNAPSHOT:compile
+623820846 xerces:xercesImpl:jar:2.4.0:compile
+300526628 xerces:xerces:jar:1.2.3:compile
+1962049725 org.codehaus.xfire:xfire-aegis:jar:1.2.6:compile
+1734023423 org.codehaus.xfire:xfire-core:jar:1.2.6:compile
+875010954 org.apache.ws.commons:XmlSchema:jar:1.1:compile
+1752402342 jdom:jdom:jar:1.0:compile
+140778365 net.java.dev.stax-utils:stax-utils:jar:20040917:compile
+935818862 org.codehaus.xfire:xfire-annotations:jar:1.2.6:compile
+1068781783 commons-attributes:commons-attributes-api:jar:2.1:compile
+1266602046 ant:ant:jar:1.5:compile
+1667859935 qdox:qdox:jar:1.5:compile
+1871838170 org.codehaus.xfire:xfire-java5:jar:1.2.6:compile
+1916681239 org.codehaus.xfire:xfire-jaxws:jar:1.2.6:compile
+1341975886 javax.xml.ws:jaxws-api:jar:2.0:compile
+1620368915 javax.xml.bind:jaxb-api:jar:2.0:compile
+12302064 org.codehaus.xfire:xfire-jaxb2:jar:1.2.6:compile
+65465460 com.sun.xml.bind:jaxb-xjc:jar:2.0.1:compile
+735639515 com.sun.xml.bind:jaxb-impl:jar:2.0.1:compile
+1836765429 com.sun.xml.messaging.saaj:saaj-impl:jar:1.3:compile
+816576412 org.codehaus.xfire:xfire-generator:jar:1.2.6:compile
+77215921 org.codehaus.xfire:xfire-xmlbeans:jar:1.2.6:compile
+1745904086 xmlbeans:xbean:jar:2.2.0:compile
+1406593369 javax.xml.soap:saaj-api:jar:1.3:compile
+1018094504 xfire:xfire-jsr181-api:jar:1.0-M1:compile
+1772358460 org.codehaus.xfire:xfire-spring:jar:1.2.6:compile
+38914319 org.apache.xbean:xbean-spring:jar:2.8:compile
+1713988669 org.springframework:spring:jar:1.2.6:compile
+768702707 com.oracle.xml:xml:jar:10.2.0.2:compile
+1684368286 xml-apis:xml-apis:jar:1.0.b2:compile
+1752223660 com.oracle:xmlparserv2:jar:10.1.0.4.2:compile
+1163216403 net.sourceforge.javawebparts:javawebparts-core:jar:1.0-beta4:compile
+#
+1361755941 1364898802 compile
+1413020227 1361755941 compile
+1413020227 1829651877 compile
+1413020227 2121744549 compile
+1413020227 2057313241 compile
+1413020227 2120344156 compile
+1413020227 1633530712 compile
+1413020227 627815870 compile
+1413020227 1609501721 compile
+1413020227 778925754 provided
+1413020227 581359452 compile
+1413020227 1519927539 compile
+1413020227 2100297853 compile
+1413020227 942502343 compile
+1413020227 749030825 compile
+1413020227 883035926 compile
+1231864343 438051252 compile
+1231864343 483589979 compile
+1413020227 1231864343 compile
+1413020227 950831464 compile
+402622480 1821711066 compile
+1413020227 402622480 compile
+1739986996 990722659 compile
+1739986996 1348045338 compile
+1413020227 1739986996 compile
+1413020227 350099713 compile
+1413020227 1132385302 compile
+1413020227 301084728 compile
+1413020227 233271622 compile
+1413020227 1763010538 compile
+1413020227 1560203450 compile
+1413020227 1552767213 compile
+1413020227 1784053627 compile
+683573228 40829249 compile
+1413020227 683573228 compile
+1413020227 873688017 compile
+1413020227 1843885967 compile
+1413020227 914175168 compile
+1289903687 1669392873 compile
+1289903687 890085657 compile
+1289903687 1778993228 compile
+1289903687 885465900 compile
+1289903687 1357663228 compile
+1413020227 1289903687 compile
+1413020227 145833361 compile
+1413020227 677007331 compile
+1413020227 629790599 compile
+1413020227 394840929 compile
+1413020227 383005108 compile
+1413020227 1812681178 compile
+123045427 1448580731 compile
+123045427 1631143060 compile
+1468685544 2084912180 compile
+123045427 1468685544 compile
+123045427 382441865 compile
+123045427 1040015904 compile
+123045427 940905579 compile
+123045427 1843674049 compile
+123045427 665448485 compile
+123045427 1905486482 compile
+123045427 1630903943 compile
+123045427 767794003 compile
+123045427 1157856790 compile
+123045427 791563230 compile
+123045427 1646410010 compile
+1413020227 123045427 compile
+1413020227 1401564942 compile
+220661927 1351275110 compile
+220661927 588503940 compile
+1413020227 220661927 compile
+1413020227 560165559 compile
+1413020227 347354124 compile
+1413020227 313249054 compile
+1413020227 802814772 compile
+1413020227 362140338 compile
+1413020227 540315736 compile
+1413020227 1824225917 provided
+1413020227 215694469 compile
+1413020227 929066990 compile
+1413020227 869437194 compile
+1413020227 76379039 compile
+1413020227 1374115999 compile
+1413020227 1707889234 compile
+1413020227 1119955774 compile
+1413020227 767535474 compile
+1413020227 1190608890 compile
+1413020227 1101970356 compile
+1413020227 184410212 compile
+1413020227 1515793520 compile
+1413020227 623820846 compile
+1413020227 300526628 compile
+1734023423 875010954 compile
+1734023423 1752402342 compile
+1962049725 1734023423 compile
+1962049725 140778365 compile
+1413020227 1962049725 compile
+1068781783 1266602046 compile
+1068781783 1667859935 compile
+935818862 1068781783 compile
+1413020227 935818862 compile
+1413020227 1871838170 compile
+1341975886 1620368915 compile
+1916681239 1341975886 compile
+65465460 735639515 compile
+12302064 65465460 compile
+1916681239 12302064 compile
+1916681239 1836765429 compile
+1916681239 816576412 compile
+77215921 1745904086 compile
+1916681239 77215921 compile
+1916681239 1406593369 compile
+1413020227 1916681239 compile
+1413020227 1018094504 compile
+1772358460 38914319 compile
+1772358460 1713988669 compile
+1413020227 1772358460 compile
+1413020227 768702707 compile
+1413020227 1684368286 compile
+1413020227 1752223660 compile
+1413020227 1163216403 compile

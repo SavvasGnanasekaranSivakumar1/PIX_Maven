@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toplink-sessions version="10g Release 3 (10.1.3.0.0)" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <session xsi:type="server-session">
+      <name>Session</name>
+      <server-platform xsi:type="jboss-platform"/>
+      <event-listener-classes/>
+      <primary-project xsi:type="xml">PIX.xml</primary-project>
+      <login xsi:type="database-login">
+         <platform-class>oracle.toplink.platform.database.oracle.Oracle10Platform</platform-class>
+         <external-connection-pooling>true</external-connection-pooling>
+         <external-transaction-controller>true</external-transaction-controller>
+         <sequencing>
+            <default-sequence xsi:type="native-sequence">
+               <name>Native</name>
+               <preallocation-size>1</preallocation-size>
+            </default-sequence>
+         </sequencing>
+         <datasource lookup="string">java:jboss/datasources/OracleDB</datasource>
+      </login>
+      <connection-pools>
+         <read-connection-pool>
+            <name>ReadConnectionPool</name>
+            <exclusive>false</exclusive>
+         </read-connection-pool>
+         <write-connection-pool>
+            <name>default</name>
+         </write-connection-pool>
+      </connection-pools>
+      <connection-policy/>
+   </session>
+  
+</toplink-sessions>

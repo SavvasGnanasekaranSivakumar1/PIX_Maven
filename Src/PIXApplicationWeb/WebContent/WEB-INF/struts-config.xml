@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="addPubUnitForm" type="com.pearson.pix.presentation.admin.action.AddPubUnitForm" />
+		<form-bean name="supplierForm" type="com.pearson.pix.presentation.admin.action.SupplierForm" />
+		<form-bean name="userForm" type="com.pearson.pix.presentation.admin.action.UserForm" />
+		<form-bean name="LoginForm" type="com.pearson.pix.presentation.admin.action.LoginForm" />
+		<form-bean name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderDetailForm" />
+		<form-bean name="orderDetailFormHist" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderDetailFormHist" />
+		<form-bean name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecForm" />
+		<form-bean name="inventoryForm" type="com.pearson.pix.presentation.inventory.action.InventoryForm" />
+		<form-bean name="inventoryFormNew" type="com.pearson.pix.presentation.inventory.action.InventoryFormNew" />
+		<form-bean name="reportForm" type="com.pearson.pix.presentation.reports.action.ReportForm" />
+		<form-bean name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningForm" />
+		<form-bean name="filterForm" type="com.pearson.pix.presentation.planning.action.FilterForm" />
+		<form-bean name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusForm" />
+		<form-bean name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageForm" />
+		<form-bean name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderListForm" />
+		<form-bean name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptForm" />
+		<form-bean name="usageForm" type="com.pearson.pix.presentation.usage.action.UsageForm" />
+		<form-bean name="usageFormList" type="com.pearson.pix.presentation.usage.action.UsageFormList" />
+		<form-bean name="dropInstForm" type="com.pearson.pix.presentation.dropship.dropshipinstruction.action.DropInstForm" />
+		<form-bean name="homePageForm" type="com.pearson.pix.presentation.home.action.HomePageForm" />
+		<form-bean name="exportToExcelForm" type="com.pearson.pix.presentation.exporttoexcel.action.ExportToExcelForm" />
+		<form-bean name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingForm" />
+		<form-bean name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingForm" />
+		<form-bean name="mismatchReportForm" type="com.pearson.pix.presentation.mismatchreport.action.MismatchReportForm" />
+		<form-bean name="baseForm" type="com.pearson.pix.presentation.base.action.BaseForm" />
+		<form-bean name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingForm" />
+		<form-bean name="potentialARPForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPForm" />
+		<form-bean name="uploadShipInfoForm" type="com.pearson.pix.presentation.dropship.action.UploadShipInfoForm" />
+		
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+
+            
+		<action path="/download/download" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileDownLoadAction" scope="request"/>
+	    <action path="/AjaxAction" name="baseForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="update"/>
+	    <action path="/renameFileAjax" name="baseForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="display"/>
+	    
+		<action path="/admin/editprofile" name="userForm" input="/admin/editprofile" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/admin/editprofile" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/updateprofile" name="userForm" input="/admin/editprofile" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="true" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+			<forward name="exists" path="/admin/loginexpired.jsp"/>
+			<forward name="editprofileexists" path="/admin/editprofile"/>
+		</action>
+
+
+		<action path="/admin/listuser" name="userForm" input="/admin/listuser" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="list">
+			<forward name="list" path="/admin/userslist" />
+			<forward name="error" path="/admin/userslist" />
+		</action>
+
+		<action path="/admin/listinuser" name="userForm" input="/admin/userslist" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+		<action path="/admin/adduserinfo" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="general">
+			<forward name="general" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/filteruser" name="userForm" input="/admin/filteruser" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="relatedList">
+			<forward name="relatedList" path="/admin/filteruser" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/supplierpopup" name="supplierForm" input="/admin/supplierpopup" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="list">
+			<forward name="list" path="/admin/supplierpopup" />
+			<forward name="error" path="/admin/supplierpopup" />
+		</action>
+
+		<action path="/admin/pubunitpopup" name="addPubUnitForm" input="/admin/pubunitpopup" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="list">
+			<forward name="list" path="/admin/pubunitpopup" />
+			<forward name="error" path="/admin/pubunitpopup" />
+		</action>
+
+
+		<action path="/admin/insertuser" type="com.pearson.pix.presentation.admin.action.AdminAction" parameter="insert" validate="true" name="userForm" scope="session" input="/admin/adduserinfo">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/admin/adduserinfo" />
+		</action>
+
+
+		<action path="/admin/edituser" name="userForm" input="/admin/edituser" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+		<action path="/admin/updateuser" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="true" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="userpassword" path="/admin/edituser" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/deleteuser" name="userForm" input="/admin/userslist" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="delete">
+			<forward name="forwardfinished" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+		<action path="/admin/deletesupplierfromuser" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="delete">
+			<forward name="forwardfinished" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/deletepublisherfromuser" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="delete">
+			<forward name="forwardfinished" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/supplierpopupedit" name="supplierForm" input="/admin/supplierpopup" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="list">
+			<forward name="list" path="/admin/supplierpopup" />
+			<forward name="error" path="/admin/supplierpopup" />
+		</action>
+
+		<action path="/admin/pubunitpopupedit" name="addPubUnitForm" input="/admin/pubunitpopup" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="list">
+			<forward name="list" path="/admin/pubunitpopup" />
+			<forward name="error" path="/admin/pubunitpopup" />
+		</action>
+
+		<action path="/admin/deletesupplierfromuseredit" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="delete">
+			<forward name="forwardfinished" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/deletepublisherfromuseredit" name="userForm" input="/admin/adduserinfo" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="delete">
+			<forward name="forwardfinished" path="/admin/adduserinfo" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/listpub" name="addPubUnitForm" input="/admin/listpub" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="list">
+			<forward name="list" path="/admin/listpubunit" />
+			<forward name="error" path="/admin/listpubunit" />
+		</action>
+
+
+		<action path="/admin/listinpubunit" name="addPubUnitForm" input="/admin/listpubunit" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/admin/addpubunit" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/filterpubunit" forward="/admin/filterpubunit" />
+
+
+
+
+
+
+		<action path="/admin/insertpubunit" type="com.pearson.pix.presentation.admin.action.AdminAction" parameter="insert" validate="true" name="addPubUnitForm" scope="request" input="/admin/addpubunit">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/admin/addpubunit" />
+		</action>
+
+		<action path="/admin/editpubunit" name="addPubUnitForm" input="/admin/editpubunit" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/admin/addpubunit" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/updatepubunit" name="addPubUnitForm" input="/admin/addpubunit" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="true" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+
+		</action>
+
+
+
+		<action path="/admin/listsup" name="supplierForm" input="/admin/supplierpub" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="list">
+			<forward name="list" path="/admin/listsupplier" />
+			<forward name="error" path="/admin/listsupplier" />
+		</action>
+
+		<action path="/admin/listinsupplier" name="supplierForm" input="/admin/listsupplier" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/admin/addsupplier" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/filtersupplier" forward="/admin/filtersupplier" />
+
+		<action path="/admin/insertsupplier" name="supplierForm" input="/admin/addsupplier" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="true" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/admin/addsupplier" />
+		</action>
+
+		<action path="/admin/editsupplier" name="supplierForm" input="/admin/editsupplier" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/admin/addsupplier" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/admin/updatesupplier" name="supplierForm" input="/admin/addsupplier" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="request" validate="true" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+
+		</action>
+
+
+		<!--  Home Page -->
+
+		<action path="/home/home" name="homePageForm" type="com.pearson.pix.presentation.home.action.HomePageAction" scope="request" parameter="display">
+			<forward name="display" path="/home/home" />
+		</action>
+
+		<action path="/planningstatus" name="homePageForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/home/home" />
+		</action>
+
+		<action path="/purchaseorderstatus" name="homePageForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/home/home" />
+		</action>
+
+		<action path="/bookspecificationstatus" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" name="homePageForm" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/home/home" />
+		</action>
+
+         <action path="/usagestatus" type="com.pearson.pix.presentation.usage.action.UsageAction" name="homePageForm" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/home/home" />
+		</action>
+	<!--  added by vishal sinha for dropship-->
+		<action path="/dropshipinstructionStatus/display" type="com.pearson.pix.presentation.dropship.dropshipinstruction.action.DropInstAction" name="dropInstForm" scope="session" parameter="display">
+			<forward name="forwardfinished" path="/dropship/dropshipinstructions" />
+		</action>
+		<action path="/dropshipinst/dropInstFilter" name="dropInstForm" type="com.pearson.pix.presentation.dropship.dropshipinstruction.action.DropInstAction"  scope="session" parameter="display">
+			<forward name="forwardfinished" path="/dropship/dropInstFilterDisplay" />
+		</action>
+		
+		<action path="/dropship/action/ajax"  type="com.pearson.pix.presentation.dropship.dropshipinstruction.action.AjaxAction" validate="false" scope="request" />
+		
+		<!--Added by Arvind for ARP Title SetUp -->
+		
+		<action path="/home/potentialarplist" name="homePageForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPAction" parameter="list" scope="request">
+			<forward name="list" path="/potentialarp/potentialarplist" />
+			<forward name="error" path="/potentialarp/potentialarplist" />
+		</action>  
+		
+		<action path="/potentialarp/potentialarplist" name="potentialARPForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPAction" scope="request" parameter="list">
+			<forward name="list" path="/potentialarp/potentialarplist" />
+			<forward name="error" path="/potentialarp/potentialarplist" />
+		</action>
+		
+		<action path="/potentialarp/potentialarpfilter" name="potentialARPForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/potentialarp/potentialarpfilter" />
+		</action>
+		
+		<action path="/potentialarp/potentialarpaccept" name="potentialARPForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPAction" scope="request">
+			<forward name="potentialarpAccept" path="/potentialarp/potentialarplist.do" />  
+			<forward name="statusMessageForward" path="/arptitlesetup/mod_potentialarp_message.jsp" />
+			<forward name="forwardToResultPopup" path="/arptitlesetup/mod_potentialarp_result.jsp" />  
+			<forward name="error" path="/error" />
+		</action>  
+		<action path="/potentialarp/potentialarpreject" name="potentialARPForm" type="com.pearson.pix.presentation.arptitlesetup.action.PotentialARPAction" scope="request">
+			<forward name="potentialarpAccept" path="/potentialarp/potentialarplist.do" />  
+			<forward name="statusMessageForward" path="/arptitlesetup/mod_potentialarp_message.jsp" />
+			<forward name="forwardToResultPopup" path="/arptitlesetup/mod_potentialarp_result.jsp" />  
+			<forward name="error" path="/error" />  
+		</action>
+		
+		<!-- End Arvind -->
+		
+		<action path="/home/planninglist" name="homePageForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" parameter="list" scope="request">
+			<forward name="list" path="/planning/planninglist" />
+			<forward name="error" path="/planning/planninglist" />
+		</action>
+		
+		<action path="/home/millplanninglist" name="homePageForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" parameter="list" scope="request">
+			<forward name="list" path="/planning/millplanninglist" />
+			<forward name="error" path="/planning/millplanninglist" />
+		</action>
+
+		<action path="/home/bookspeclist" name="homePageForm" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" parameter="list" scope="request">
+			<forward name="list" path="/bookspecification/bookspeclist" />
+			<forward name="error" path="/bookspecification/bookspeclist" />
+		</action>
+
+		<action path="/home/purchaseorderlist" name="homePageForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" parameter="list" scope="request">
+			<forward name="list" path="/purchaseorder/purchaseorderlist" />
+			<forward name="error" path="/purchaseorder/purchaseorderlist" />
+
+		</action>
+		
+		<action path="/home/millpurchaseorderlist" name="homePageForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" parameter="list" scope="request">
+			<forward name="list" path="/purchaseorder/millpurchaseorderlist" />
+			<forward name="error" path="/purchaseorder/millpurchaseorderlist" />
+
+		</action>
+
+         <action path="/home/usagelist" name="homePageForm" type="com.pearson.pix.presentation.usage.action.UsageAction" parameter="list" scope="request">
+			<forward name="list" path="/usage/usageList" />
+			<forward name="error" path="/usage/usageList" />
+
+		</action>
+			
+				
+		<!--  Login  -->
+
+		<action path="/login" name="LoginForm" parameter="display" type="com.pearson.pix.presentation.admin.action.LoginAction" validate="false" scope="request">
+			<forward name="display" path="/home/home.do"/>
+			<forward name="error" path="/home/home.do"/>
+			<forward name="expire" path="/admin/loginexpired.do"/>
+			<forward name="list" path="/costaccounting/approvallist" />
+		</action>
+
+
+		<action path="/login/forgotpassword" input="/login.jsp" name="LoginForm" parameter="forgotpassword" type="com.pearson.pix.presentation.admin.action.LoginAction" scope="request" validate="false">
+			<forward name="forgotpassword" path="/login.jsp" />
+			<forward name="error" path="/login.jsp" />
+		</action>
+		
+		
+		<action path="/logout" name="LoginForm"  parameter="relatedList" type="com.pearson.pix.presentation.admin.action.LoginAction" scope="request" validate="false">
+			<forward name="relatedList" path="/login.jsp" />
+			<forward name="logoutForward" path="/common/logout.jsp" />
+			
+		</action>
+
+<action path="/admin/loginexpired" name="userForm" input="/admin/loginexpired.jsp" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/admin/loginexpired.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+
+<action path="/admin/updateloginexpired" name="userForm" input="/admin/loginexpired.jsp" type="com.pearson.pix.presentation.admin.action.AdminAction" scope="session" validate="true" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<!--  OrderStatusList -->
+
+		<action path="/orderStatus/orderStatusList" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="request" parameter="list">
+			<forward name="list" path="/orderStatus/statusList" />
+			<forward name="error" path="/orderStatus/statusList" />
+		</action>
+		
+		<action path="/orderStatus/inboxorderStatusList" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="request" parameter="list">
+			<forward name="list" path="/orderStatus/inboxstatusList" />
+			<forward name="error" path="/orderStatus/inboxstatusList" />
+		</action>
+
+		<!--  OrderStatusDetail -->
+
+		<action path="/orderStatus/orderStatusDetail" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="session" parameter="display">
+			<forward name="display" path="/orderStatus/statusDetail" />
+			<forward name="error" path="/orderStatus/statusDetail" />
+		</action>
+		
+		<action path="/orderStatus/inboxorderStatusDetail" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="session" parameter="display">
+			<forward name="display" path="/orderStatus/inboxstatusDetail" />
+			<forward name="error" path="/orderStatus/inboxstatusDetail" />
+		</action>
+
+		<!--  OrderStatusNew -->
+		<action path="/orderStatus/orderStatusNew" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/orderStatus/statusNew" />
+			<forward name="error" path="/orderStatus/statusNew" />
+		</action>
+
+		<!--  OrderStatusInsert -->
+		<action path="/orderStatus/orderStatusInsert" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="session" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/pdf/orderstatuspdf" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/orderStatus/statusDetail" />
+			<forward name="error" path="/orderStatus/statusDetail" />
+		</action>
+
+		<!--  UsageList -->
+
+		<action path="/usage/usageList" type="com.pearson.pix.presentation.usage.action.UsageAction" name="usageFormList" scope="request" parameter="list">
+			<forward name="list" path="/usage/usageList" />
+			<forward name="error" path="/usage/usageList" />
+		</action>
+
+		<!--  UsageListFilter -->
+
+		<action path="/usage/usageFilter" name="usageFormList" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/usage/usageFilter" />
+			<forward name="error" path="/usage/usageFilter" />
+		</action>
+
+		<!--  UsageDetail -->
+
+		<action path="/usage/usageDetail" name="usageForm" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="session" parameter="display">
+			<forward name="display" path="/usage/usageDetail" />
+			<forward name="error" path="/usage/usageDetail" />
+		</action>
+
+		<!--  UsageHistory -->
+		<action path="/usage/usagehistorylist" name="usageFormList" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="request" parameter="list">
+			<forward name="list" path="/usage/usagehistorylist" />
+			<forward name="error" path="/usage/usagehistorylist" />
+		</action>
+
+		<!--  UsageHistoryDetail -->
+		<action path="/usage/usagehistorydetail" name="usageForm" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="session" parameter="display">
+			<forward name="display" path="/usage/usagehistorydetail" />
+			<forward name="error" path="/usage/usagehistorydetail" />
+		</action>
+
+		<!--  New Usage -->
+		<action path="/usage/newusage" type="com.pearson.pix.presentation.usage.action.UsageAction" name="usageForm" scope="session" parameter="relatedListNew">
+			<forward name="relatedListNew" path="/usage/newusage" />
+			<forward name="error" path="/usage/newusage" />
+		</action>
+
+		<!--  Insert Usage -->
+		<action path="/usage/insertusage" type="com.pearson.pix.presentation.usage.action.UsageAction" name="usageForm" scope="session" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/pdf/usagepdf" name="usageForm" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/usage/usageList" />
+			<forward name="error" path="/usage/usageList" />
+		</action>
+
+		<!--  Planning -->
+
+
+		<action path="/planning/planninglist" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="list">
+			<forward name="list" path="/planning/planninglist" />
+			<forward name="error" path="/planning/planninglist" />
+		</action>
+       
+       <action path="/planning/millplanninglist" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="list">
+			<forward name="list" path="/planning/millplanninglist" />
+			<forward name="error" path="/planning/millplanninglist" />
+		</action>
+
+		<action path="/planning/planningfilter" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/planning/planningfilter" />
+		</action>
+       
+       <action path="/planning/millplanningfilter" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/planning/millplanningfilter" />
+		</action>
+
+		<action path="/planning/planningdetail" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/planning/planningdetail" />
+		</action>
+		
+		<action path="/planning/millplanningdetail" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/planning/millplanningdetail" />
+		</action>
+
+		<action path="/planning/planninghistorylist" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="list">
+			<forward name="list" path="/planning/planninghistorylist" />
+			<forward name="error" path="/planning/planninghistorylist" />
+		</action>
+		
+		<action path="/planning/millplanninghistorylist" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" parameter="list">
+			<forward name="list" path="/planning/millplanninghistorylist" />
+			<forward name="error" path="/planning/millplanninghistorylist" />
+		</action>
+
+
+		<action path="/planning/planninghistorydetail" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/planning/planninghistorydetail" />
+		</action>
+		
+		<action path="/planning/millplanninghistorydetail" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/planning/millplanninghistorydetail" />
+		</action>
+
+		<action path="/planning/planningdetailsave" name="orderDetailForm" input="/planning/planningdetail" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/planning/planningpoAcceptMessage" name="planningForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" validate="false" parameter="multipleplanningpoAccept">
+			<forward name="multipleplanningpoAccept" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/pdf/planningpdf" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/planning/planninghistorylist" />
+			<forward name="error" path="/planning/planninghistorylist" />
+		</action>
+
+
+
+		<!--  Delivery Message -->
+
+		<action path="/deliverymessage/deliverymessagelist" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="request" parameter="list">
+			<forward name="list" path="/deliverymessage/deliverymessagelist" />
+			<forward name="error" path="/deliverymessage/deliverymessagelist" />
+		</action>
+		
+		<!-- Gaurav -->
+		  <action path="/deliverymessage/deliverymessagemilllist" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="list">
+			<forward name="list" path="/deliverymessage/deliverymessagemilllist" />
+			<forward name="error" path="/deliverymessage/deliverymessagemilllist" />
+		</action>
+		<action path="/deliverymessage/deliverymessagemilldetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/deliverymessage/deliverymessagemilldetail" />
+			<forward name="error" path="/error" />
+		</action>
+		<action path="/deliverymessage/deliverymessagemillupdate" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="samePage" path="/deliverymessage/deliverymessagemilllist" />
+			<forward name="error" path="/error" />
+		</action>
+		<action path="/deliverymessage/inboxdeliverymsgmilldetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="inboxlist">
+			<forward name="inboxlist" path="/deliverymessage/inboxdeliverymsgmilldetail" />
+			<forward name="error" path="/error" />
+		</action>
+		<!-- Gaurav -->		
+		<action path="/deliverymessage/inboxdeliverylist" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="request" parameter="inboxlist">
+			<forward name="inboxlist" path="/deliverymessage/inboxdeliverylist" />
+			<forward name="error" path="/deliverymessage/inboxdeliverylist" />
+		</action>
+		
+		<action path="/deliverymessage/inboxdeliverymessagedetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="display">
+			<forward name="display" path="/deliverymessage/inboxdeliverymessagedetail" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/deliverymessage/deliverymessagedetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="display">
+			<forward name="display" path="/deliverymessage/deliverymessagedetail" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		
+		<action path="/purchaseorder/downloadfile" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="fileupload">
+			<forward name="fileupload" path="/deliverymessage/mod_delivery_message_download_files.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/FileUpload/deleteFile" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="delete">
+			<forward name="delete" path="/purchaseorder/downloadfile.do" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		
+		<action path="/deletefromdownload/deleteFile" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="delete">
+			<forward name="delete" path="/delMsgDetail/downloadfile.do" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/deletefilefromsystem/delete" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="delete">
+			<forward name="delete" path="/purchaseorder/downloadfile.do" />
+			<forward name="error" path="/error" />
+		</action>	
+		
+		
+		
+		<!-- forward="deliverydetail"/>  deliverymessage/mod_delivery_message_download_files.jsp-->
+
+		<action path="/deliverymessage/deliverymessagenew" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/deliverymessage/deliverymessagenew" />
+			<forward name="error" path="/error" />
+		</action>
+        
+        <action path="/deliverymessage/milldeliverymessagenew" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/deliverymessage/milldeliverymessagenew" />
+			<forward name="pageRefresh" path="/purchaseorder/millpurchaseorderlist.do?PAGE_VALUE=1&amp;party=M" />
+			<forward name="DMpageRefresh" path="/deliverymessage/deliverymessagelist.do?partyM=M&amp;PAGE_VALUE=1" />
+			<forward name="error" path="/error" />
+		</action>
+        
+		<action path="/deliverymessage/insertnewdeliverymessage" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="samePage" path="/deliverymessage/deliverymessagemilllist" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/pdf/deliverymessagepdf" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/deliverymessage/deliverymessagelist" />
+			<forward name="error" path="/deliverymessage/deliverymessagelist" />
+		</action>
+
+
+		<action path="/delMsgDetail/downloadfile" name="fileUploadingForm" type="com.pearson.pix.presentation.fileuploading.action.FileUploadingAction" scope="request" parameter="general">
+			<forward name="general" path="/deliverymessage/mod_delivery_message_download_files.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+		<!--  Goods Receipt -->
+
+		<action path="/goodsreceipt/goodsreceiptlist" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="request" parameter="list">
+			<forward name="list" path="/goodsreceipt/goodsreceiptlist" />
+			<forward name="error" path="/goodsreceipt/goodsreceiptlist" />
+		</action>
+		
+		<!-- RFS 5922, @author-Anshu Bhardwaj -->
+		<action path="/goodsreceipt/goodsreceiptpapernew" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="">
+			<forward name="forwardfinished" path="/goodsreceipt/goodsreceiptpapernew" />
+			<forward name="forwardpopup" path="/goodsreceipt/mod_goods_receipt_rolldtl_list.jsp" />
+			<forward name="error" path="/goodsreceipt/goodsreceiptpapernew" />
+		</action>
+		<action path="/goodsreceipt/goodsreceiptpaperhistory" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="">
+			<forward name="forwardfinished" path="/goodsreceipt/goodsreceiptpaperhistory" />
+			<forward name="error" path="/goodsreceipt/goodsreceiptpaperhistory" />
+		</action>
+		<action path="/goodsreceipt/goodsreceipthistoryupdate" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+		<!-- End of RFS 5922 -->
+
+       <action path="/goodsreceipt/inboxgoodsreceiptlist" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="request" parameter="list">
+			<forward name="list" path="/goodsreceipt/inboxgoodsreceiptlist" />
+			<forward name="error" path="/goodsreceipt/inboxgoodsreceiptlist" />
+		</action>
+
+
+
+		<action path="/goodsreceipt/goodsreceiptdetial" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="display">
+			<forward name="display" path="/goodsreceipt/goodsreceiptdetial" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/goodsreceipt/inboxgoodsreceiptdetial" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="display">
+			<forward name="display" path="/goodsreceipt/inboxgoodsreceiptdetial" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/goodsreceipt/deliverymessagedetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="request" parameter="display">
+			<forward name="display" path="/goodsreceipt/deliverymessage_popup.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/goodsreceipt/goodsreceiptnew" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/goodsreceipt/goodsreceiptnew" />
+			<forward name="error" path="/goodsreceipt/goodsreceiptnew" />
+		</action>
+		
+		<action path="/goodsreceipt/millgoodsreceiptnew" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="relatedList">
+			<forward name="relatedList" path="/goodsreceipt/millgoodsreceiptnew" />
+			<forward name="error" path="/goodsreceipt/millgoodsreceiptnew" />
+		</action>
+
+		<action path="/goodsreceipt/insertnewgoodsreceipt" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/pdf/goodsreceiptpdf" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/goodsreceipt/goodsreceiptlist" />
+			<forward name="error" path="/goodsreceipt/goodsreceiptlist" />
+		</action>
+
+		<!--  Purchase Order -->
+
+		<action path="/purchaseorder/purchaseorderlist" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="list">
+			<forward name="list" path="/purchaseorder/purchaseorderlist" />
+			<forward name="error" path="/purchaseorder/purchaseorderlist" />
+		</action>
+		
+		
+		<action path="/purchaseorder/millpurchaseorderlist" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="list">
+			<forward name="list" path="/purchaseorder/millpurchaseorderlist" />			
+			<forward name="error" path="/purchaseorder/millpurchaseorderlist" />
+		</action>
+
+		<action path="/purchaseorder/purchaseorderfilter" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/purchaseorder/purchaseorderfilter" />
+			<forward name="error" path="/purchaseorder/purchaseorderlist" />
+		</action>
+       
+       
+       <action path="/purchaseorder/millpurchaseorderfilter" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/purchaseorder/millpurchaseorderfilter" />
+			<forward name="error" path="/purchaseorder/millpurchaseorderlist" />
+		</action>
+		
+       
+       
+       
+		<action path="/purchaseorder/orderdetail" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/purchaseorder/orderdetail" />
+			<forward name="displaypaper" path="/purchaseorder/millorderdetail" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/purchaseorder/millorderdetail" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/purchaseorder/millorderdetail" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		
+		
+		<action path="/purchaseorder/inboxorderdetail" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/purchaseorder/inboxorderdetail" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/purchaseorder/orderdetailhistory" name="orderDetailFormHist" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/purchaseorder/orderdetailhistory" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/purchaseorder/millorderdetailhistory" name="orderDetailFormHist" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="display">
+			<forward name="display" path="/purchaseorder/millorderdetailhistory" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/purchaseorder/orderdetailmessage" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" input="/purchaseorder/orderdetail" scope="session" validate="false" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/purchaseorder/suppliedcomponent" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" input="/purchaseorder/suppliedcomponent" scope="request" validate="false"
+			parameter="suppliedcomp">
+			<forward name="suppliedcomp" path="/purchaseorder/suppliedcomponent" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/purchaseorder/ordersAcceptMessage" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" validate="false" parameter="multiordersAccept">
+			<forward name="multiordersAccept" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<!--  Purchase Order History List -->
+
+		<action path="/purchaseorder/purchaseorderhistorylist" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="list">
+			<forward name="list" path="/purchaseorder/purchaseorderhistorylist" />
+			<forward name="error" path="/purchaseorder/purchaseorderhistorylist" />
+		</action>
+		
+		<action path="/purchaseorder/millpurchaseorderhistorylist" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="list">
+			<forward name="list" path="/purchaseorder/millpurchaseorderhistorylist" />
+			<forward name="error" path="/purchaseorder/millpurchaseorderhistorylist" />
+		</action>
+
+		<!--  Furnished Order -->
+		<action path="/purchaseorder/furnishedorderlist" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="list">
+			<forward name="list" path="/purchaseorder/furnishedorderlist" />
+			<forward name="error" path="/purchaseorder/furnishedorderlist" />
+		</action>
+
+		<action path="/purchaseorder/furnishedorderfilter" name="orderListForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/purchaseorder/furnishedorderfilter" />
+			<forward name="error" path="/purchaseorder/furnishedorderlist" />
+		</action>
+
+		<action path="/pdf/purchaseorder" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/purchaseorder/furnishedorderfilter" />
+			<forward name="error" path="/purchaseorder/furnishedorderlist" />
+		</action>
+
+
+
+
+		<!--   Book specification module  -->
+
+		<action path="/bookspecification/bookspeclist" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" name="bookspecform" scope="request" validate="true" parameter="list">
+			<forward name="list" path="/bookspecification/bookspeclist" />
+			<forward name="error" path="/bookspecification/bookspeclist" />
+		</action>
+
+		<action path="/bookspecification/bookspecfilter" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" name="bookspecform" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/bookspecification/bookspecfilter" />
+			<forward name="error" path="/bookspecification/bookspeclist" />
+		</action>
+
+		<action path="/bookspecification/bookspecdetail" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="session" parameter="display">
+			<forward name="display" path="/bookspecification/bookspecdetail" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/bookspecification/pobookspecdetail" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="request" parameter="display">
+			<forward name="display" path="/bookspecification/pobookspecdetail" />
+			<forward name="error" path="/bookspecification/pobookspecdetail" />
+		</action>
+
+		<action path="/bookspecification/planningbookspecdetail" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="request" parameter="display">
+			<forward name="display" path="/bookspecification/planningbookspecdetail" />
+			<forward name="error" path="/bookspecification/planningbookspecdetail" />
+		</action>
+
+		<action path="/bookspecification/bookspecsave" name="bookspecform" input="/bookspecification/bookspecdetail" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="session" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/bookspecification/bookspechistorylist" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="request" parameter="list">
+			<forward name="list" path="/bookspecification/bookspechistorylist" />
+			<forward name="error" path="/bookspecification/bookspechistorylist" />
+		</action>
+
+		<action path="/bookspecification/bookspechistorydetail" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="session" parameter="display">
+			<forward name="display" path="/bookspecification/bookspechistorydetail" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+		<action path="/bookspecification/bookspecAcceptMessage" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="session" parameter="multiplebookspecAccept">
+			<forward name="multiplebookspecAccept" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+
+
+		<action path="/pdf/bookspecificationpdf" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/bookspecification/bookspechistorylist" />
+			<forward name="error" path="/bookspecification/bookspechistorylist" />
+		</action>
+
+
+
+		<!--   Book specification module  -->
+
+
+		<!--   Inventory module  -->
+
+
+		<action path="/inventory/inventorysearching" name="inventoryForm" type="com.pearson.pix.presentation.inventory.action.InventoryAction" scope="session" parameter="display">
+			<forward name="display" path="/inventory/inventorysearching" />
+			<forward name="error" path="/inventory/inventorysearching" />
+		</action>
+
+		<action path="/inventory/inventorysave" name="inventoryForm" type="com.pearson.pix.presentation.inventory.action.InventoryAction" scope="session" parameter="insert">
+			<forward name="insert" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+
+		<action path="/inventory/inventorysearch" name="inventoryForm" type="com.pearson.pix.presentation.inventory.action.InventoryAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/inventory/inventorysearch" />
+			<forward name="error" path="/inventory/inventorysearch" />
+		</action>
+
+
+
+
+		<!--   Inventory module  -->
+
+		<!--  Reports module -->
+		
+		<action path="/reports/reportsearchdetail" forward="/reports/reportsearchdetail" />
+		
+		<action path="/reports/reportsearch" name="reportForm" type="com.pearson.pix.presentation.reports.action.ReportAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/reports/reportsearch" />
+			<forward name="error" path="/reports/reportsearch" />
+		</action>
+		
+		<action path="/reports/reportsearching" name="reportForm" type="com.pearson.pix.presentation.reports.action.ReportAction" scope="request" parameter="list">
+			<forward name="list" path="/reports/reportsearchdetail" />
+			<forward name="error" path="/reports/reportsearchdetail" />
+		</action>
+
+		<action path="/reports/reportusagedetail" name="usageForm" type="com.pearson.pix.presentation.usage.action.UsageAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportusagedetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<!-- <action path="/reports/reportinventorydetail" name="inventoryForm" type="com.pearson.pix.presentation.inventory.action.InventoryAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportinventorydetail" />
+			<forward name="error" path="/error" />
+		</action> -->
+
+		<action path="/reports/reportorderstatusdetail" name="orderStatusForm" type="com.pearson.pix.presentation.orderstatus.action.OrderStatusAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportorderstatusdetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+
+
+		<action path="/reports/reportplanningdetail" name="orderDetailForm" type="com.pearson.pix.presentation.planning.action.PlanningAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/reports/reportplanningdetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<action path="/reports/reportdeliverymessagedetail" name="deliveryMessageForm" type="com.pearson.pix.presentation.deliverymessage.action.DeliveryMessageAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportdeliverymessagedetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<action path="/reports/reportgoodsreceiptdetail" name="goodsReceiptForm" type="com.pearson.pix.presentation.goodsreceipt.action.GoodsReceiptAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportgoodsreceiptdetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<action path="/reports/reportpurchaseorderdetail" name="orderDetailForm" type="com.pearson.pix.presentation.purchaseorder.action.PurchaseOrderAction" scope="request" validate="false" parameter="display">
+			<forward name="display" path="/reports/reportpurchaseorderdetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<action path="/reports/reportbookspecdetail" name="bookspecform" type="com.pearson.pix.presentation.bookspecification.action.BookSpecAction" scope="request" parameter="display">
+			<forward name="display" path="/reports/reportbookspecdetail" />
+			<forward name="error" path="/popuperror" />
+		</action>
+
+		<action path="/exporttoexcel/generateexcel" name="exportToExcelForm" type="com.pearson.pix.presentation.exporttoexcel.action.ExportToExcelAction" scope="request" parameter="display"></action>
+
+
+
+		<!--  Reports module -->
+		
+		<!-- Added for Mismatch Report -->
+		<action path="/mismatchreport/mismatchreport" name="mismatchReportForm" type="com.pearson.pix.presentation.mismatchreport.action.MismatchReportAction" scope="session" parameter="general">
+			 <forward name="display" path="/mismatchreport" /> 			
+			<forward name="error" path="/mismatchreport" />				
+		</action>
+		
+		<!--  Cost Accouting Module -->
+		<action path="/costaccounting/approvallist" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="request" parameter="list">
+			<forward name="list" path="/costaccounting/approvallist" />
+			<forward name="error" path="/costaccounting/approvallist" />
+		</action>
+		
+		
+		<action path="/costaccounting/dmListApproval" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="request" parameter="approveList">
+			<forward name="approveList" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/costaccounting/dmApprovalfilter" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="request" parameter="relatedList">
+			<forward name="relatedList" path="/costaccounting/dmApprovalfilter" />
+		</action>
+		
+		<action path="/costaccounting/deliverymessagedetail" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="session" parameter="display">
+			<forward name="display" path="/costaccounting/deliverymessagedetail" />
+			<forward name="forwardpopup" path="/costaccounting/mod_deliverymessage_ownedQty_popup.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/costaccounting/deliverymessageupdate" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="session" parameter="update">
+			<forward name="update" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/costaccounting/dmDetailApproval" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="session" parameter="approveDetail">
+			<forward name="approveDetail" path="/success" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/pdf/costdeliverymessagepdf" name="costAccountingForm" type="com.pearson.pix.presentation.costaccounting.action.CostAccountingAction" scope="session" parameter="exportpdf">
+			<forward name="exportpdf" path="/costaccounting/approvallist" />
+			<forward name="error" path="/costaccounting/approvallist" />
+		</action>
+		
+		<!--  BOL -->
+		
+		
+		
+		<action path="/purchaseorder/uploadbolloadfile" name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingAction" scope="session" parameter="fileupload">
+			<forward name="fileupload" path="/deliverymessage/mod_delivery_message_bol_file.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/boltempfiledelete/delete" name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingAction" scope="session" parameter="fileupload">
+			<forward name="fileupload" path="/deliverymessage/mod_delivery_message_bol_file.jsp" />
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/bolfilelist/downloadfile" name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingAction" scope="request" parameter="general">
+			<forward name="general" path="/deliverymessage/mod_delivery_message_bol_file.jsp" />
+		
+			<forward name="error" path="/error" />
+		</action>
+		
+		<action path="/bolfilelist/downloadfilesingal" name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingAction" scope="request" parameter="general">
+			<forward name="error" path="/error" />
+		</action>
+		
+		
+			<action path="/bolfiledownload/download" name="bolUploadingForm" type="com.pearson.pix.presentation.boluploading.action.BOLFileDownLoadAction" scope="request"/>
+			
+			 <action path="/filelistsize/ajaxaction" name="baseForm" type="com.pearson.pix.presentation.boluploading.action.BOLUploadingAction" scope="request" parameter="update"/>
+        <!--  BOL -->
+        <!-- Gaurav -->
+		<action path="/home/dmlist" name="homePageForm" type="com.pearson.pix.presentation.home.action.HomePageAction" parameter="list" scope="request"/>
+		
+	    <!-- Gaurav -->
+       <!-- Anil Satija -  for dropship -->
+       	<action path="/dropship/shippingConfirmation" type="com.pearson.pix.presentation.dropship.action.DropshipAction" parameter="display" validate="false" name="uploadShipInfoForm" scope="session">
+			<forward name="forwardfinished" path="/dropship/shippingConfirmation"/>
+		</action>
+       	<action path="/dropship/shippingConfirmation/read" type="com.pearson.pix.presentation.dropship.action.DropshipAction" validate="false" name="uploadShipInfoForm" scope="session">
+			<forward name="forwardfinished" path="/dropship/shipping_confimation_detail.jsp"/>
+			<forward name="error" path="/dropship/shipping_confimation_detail.jsp"/>
+		</action>
+       	<action path="/dropship/shippingConfirmation/delete" type="com.pearson.pix.presentation.dropship.action.DropshipAction" parameter="delete" validate="false" name="uploadShipInfoForm" scope="session">
+			<forward name="forwardfinished" path="/dropship/shippingConfirmation"/>
+	 	</action>
+       <action path="/dropship/shippingConfirmation/confirm" type="com.pearson.pix.presentation.dropship.action.DropshipAction" parameter="insert" validate="false" name="uploadShipInfoForm" scope="session">
+			<forward name="forwardfinished" path="/dropship/shippingConfirmation"/>
+	 	</action>
+       
+	</action-mappings>
+
+	<message-resources parameter="com.pearson.pix.presentation.base.common.ApplicationResources" />
+
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+		<set-property property="definitions-parser-validate" value="true" />
+	</plug-in>
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+</struts-config>
+

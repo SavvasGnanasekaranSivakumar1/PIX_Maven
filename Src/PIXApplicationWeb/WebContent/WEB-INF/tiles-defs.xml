@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+             
+    <tiles-definitions>
+	<!-- Base Tiles Definition -->
+	<definition name="main" path="/templates/tem_transactions.jsp">
+		<put name="menu" value="/common/mod_menu.jsp" />
+		<put name="usersupport" value="/common/mod_user_support.jsp"/>
+		<put name="mainbody" value="/common/mod_blank.jsp" />  
+		<put name="footer" value="/common/mod_footer.jsp" />
+		<put name="specificjs" value="/js/blank.js" />
+		<put name="css" value="/css/pixcss.css" />
+		<put name="datachange" value="/common/datachange.jsp"/>
+	</definition>
+	
+	<definition name="/home/home" extends="main">
+		<put name="mainbody" value="/common/mod_home.jsp" />  
+		<put name="title" value="Home Page" />
+		<put name="datachange" value="/common/mod_blank.jsp"/>
+	</definition>
+	
+	<!--Manage Users List-->
+	<definition name="/admin/userslist" extends="main">
+		<put name="mainbody" value="/admin/mod_manageusers.jsp" />  
+		<put name="title" value="Manage Users" />
+		<put name="specificjs" value="/js/admin.js" />
+		<put name="datachange" value="/common/mod_blank.jsp"/>
+	</definition>
+	
+	<!--User Info Detail-->
+	<definition name="/admin/adduserinfo" extends="main">
+		<put name="mainbody" value="/admin/mod_add_user.jsp" />  
+		<put name="title" value="Add User" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+	
+	<definition name="/admin/filteruser" extends="main">
+		<put name="mainbody" value="/admin/mod_user_filter.jsp" />  
+		<put name="title" value="Manage Users-Filter" />
+	</definition>
+
+	<definition name="/admin/supplierpopup" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/admin/add_supplier_popUp.jsp" />  
+		<put name="title" value="Add Supplier" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+	
+	<definition name="/admin/pubunitpopup" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/admin/add_pubunit_popUp.jsp" />  
+		<put name="title" value="Add Pub Unit" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+
+	<definition name="/admin/addpubunit" extends="main">
+		<put name="mainbody" value="/admin/mod_add_pub_unit.jsp" />  
+		<put name="title" value="Pub Unit" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+	
+	<definition name="/admin/listpubunit" extends="main">
+		<put name="mainbody" value="/admin/mod_managepubunits.jsp" />  
+		<put name="title" value="Manage Pub Unit" />
+		<put name="specificjs" value="/js/admin.js" />
+		<put name="datachange" value="/common/mod_blank.jsp"/>
+	</definition>
+
+	<definition name="/admin/filterpubunit" extends="main">
+		<put name="mainbody" value="/admin/mod_pub_unitlistFilter.jsp" />  
+		<put name="title" value="Manage Pub Units-Filter" />
+	</definition>
+	
+	<definition name="/admin/listsupplier" extends="main">
+		<put name="mainbody" value="/admin/mod_managesuppliers.jsp" />  
+		<put name="title" value="Manage Supplier" />
+		<put name="specificjs" value="/js/admin.js" />
+		<put name="datachange" value="/common/mod_blank.jsp"/>
+	</definition>
+	
+	<definition name="/admin/addsupplier" extends="main">
+		<put name="mainbody" value="/admin/mod_add_edit_supplier.jsp" />  
+		<put name="title" value="Manage Supplier" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+	
+	<definition name="/admin/filtersupplier" extends="main">
+		<put name="mainbody" value="/admin/mod_supplier_filter.jsp" />  
+		<put name="title" value="Manage Suppliers-Filter" />
+	</definition>
+	
+	<definition name="/admin/editprofile" extends="main">
+		<put name="mainbody" value="/admin/mod_edit_profile.jsp" />  
+		<put name="title" value="Edit Profile" />
+		<put name="specificjs" value="/js/admin.js" />
+	</definition>
+	
+	<definition name="/admin/edituser" extends="main">
+        <put name="mainbody" value="/admin/mod_add_user.jsp" />
+        <put name="title" value="Edit User Profile" />
+        <put name="specificjs" value="/js/admin.js" />
+      </definition>
+
+	
+	
+
+	<!--Purchase Order Detail page-->
+	<definition name="/purchaseorder/orderdetail" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_order_detail.jsp" />  
+		<put name="title" value="Order Detail" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+	</definition>
+	
+	<definition name="/purchaseorder/millorderdetail" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_mill_order_detail.jsp" />  
+		<put name="title" value="Order Detail" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+	</definition>
+	
+	
+	
+	<definition name="/purchaseorder/inboxorderdetail" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_inboxorder_detail.jsp" />  
+		<put name="title" value="Order Detail" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+	</definition>
+	
+	<definition name="/purchaseorder/orderdetailhistory" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_order_history_detail.jsp" />  
+		<put name="title" value="Order Detail History" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+	</definition>
+	
+	<definition name="/purchaseorder/millorderdetailhistory" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_mill_order_history_detail.jsp" />  
+		<put name="title" value="Order Detail History" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+	</definition>	
+	
+	<definition name="/purchaseorder/suppliedcomponent" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/purchaseorder/mod_supplied_component.jsp" />  
+		<put name="title" value="Supplied Components" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+	</definition>
+	
+	
+	<!-- Purchase Order List -->
+	<definition name="/purchaseorder/purchaseorderlist" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_order_list.jsp" />  
+		<put name="title" value="Purchase Order List" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+   </definition>
+   
+   <definition name="/purchaseorder/millpurchaseorderlist" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_mill_order_list.jsp" />  
+		<put name="title" value="Purchase Order List" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+   </definition>
+   
+   
+   
+   
+   <definition name="/purchaseorder/purchaseorderfilter" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_order_filter.jsp" />  
+		<put name="title" value="Purchase Order Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+		
+   </definition>
+   
+   <definition name="/purchaseorder/millpurchaseorderfilter" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_order_mill_filter.jsp" />  
+		<put name="title" value="Purchase Order Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+		
+   </definition>
+   
+   
+   <!-- Purchase Order History List -->
+   <definition name="/purchaseorder/purchaseorderhistorylist" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/purchaseorder/mod_purchase_order_history.jsp" />  
+		<put name="title" value="Purchase Order History" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+   </definition>
+   
+   <definition name="/purchaseorder/millpurchaseorderhistorylist" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/purchaseorder/mod_mill_purchase_order_history.jsp" />  
+		<put name="title" value="Purchase Order History" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+   </definition>
+      
+   <!-- Furnished Order List -->
+	<definition name="/purchaseorder/furnishedorderlist" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_furnished_order_list.jsp" />  
+		<put name="title" value="Furnished Order List" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+   </definition>
+   
+   <definition name="/purchaseorder/furnishedorderfilter" extends="main">
+		<put name="mainbody" value="/purchaseorder/mod_furnished_order_filter.jsp" />  
+		<put name="title" value="Furnished Order Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+   </definition>
+	
+	<!--  ARP SetUp -->
+   <definition name="/potentialarp/potentialarplist" extends="main">
+		<put name="mainbody" value="/arptitlesetup/mod_potentialarp_list.jsp" />  
+		<put name="title" value="Potential ARP List" />
+		<put name="specificjs" value="/js/potentialarp.js" />  
+   </definition>
+   
+     <!-- ARP SetUp Filter -->
+    <definition name="/potentialarp/potentialarpfilter" extends="main">
+		<put name="mainbody" value="/arptitlesetup/mod_potentialarp_filter.jsp" />  
+		<put name="title" value="Potential ARP Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/potentialarp.js" />
+   </definition>
+	
+	<!--  Planning -->
+   <definition name="/planning/planninglist" extends="main">
+		<put name="mainbody" value="/planning/mod_planning_list.jsp" />  
+		<put name="title" value="Planning List" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+   
+    <definition name="/planning/millplanninglist" extends="main">
+		<put name="mainbody" value="/planning/mod_mill_planning_list.jsp" />  
+		<put name="title" value="Planning List" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+   
+  
+   <!-- Planning Detail -->
+   <definition name="/planning/planningdetail" extends="main">
+		<put name="mainbody" value="/planning/mod_planning_detail.jsp" />  
+		<put name="title" value="Planning Detail" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+   
+   <definition name="/planning/millplanningdetail" extends="main">
+		<put name="mainbody" value="/planning/mod_mill_planning_detail.jsp" />  
+		<put name="title" value="Planning Detail" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+   <!-- Planning History -->
+    <definition name="/planning/planninghistorylist" extends="main">
+        <put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/planning/mod_planning_history.jsp" />  
+		<put name="title" value="Planning History" />
+   </definition>
+   
+   <definition name="/planning/millplanninghistorylist" extends="main">
+        <put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/planning/mod_mill_planning_history.jsp" />  
+		<put name="title" value="Planning History" />
+   </definition>
+	<!-- Planning Detail History -->
+    <definition name="/planning/planninghistorydetail" extends="main">
+        <put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/planning/mod_planning_history_detail.jsp" />  
+		<put name="title" value="Planning History Detail" />
+		<put name="specificjs" value="/js/planning.js" />
+    </definition>
+    
+    <definition name="/planning/millplanninghistorydetail" extends="main">
+        <put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/planning/mod_mill_planning_history_detail.jsp" />  
+		<put name="title" value="Planning History Detail" />
+		<put name="specificjs" value="/js/planning.js" />
+    </definition>
+    <!-- Planning Filter -->
+    <definition name="/planning/planningfilter" extends="main">
+		<put name="mainbody" value="/planning/mod_planning_filter.jsp" />  
+		<put name="title" value="Planning Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+   
+	<definition name="/planning/millplanningfilter" extends="main">
+		<put name="mainbody" value="/planning/mod_mill_planning_filter.jsp" />  
+		<put name="title" value="Planning Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/planning.js" />
+   </definition>
+		
+	
+	 <!--  Delivery Message -->
+   <definition name="/deliverymessage/deliverymessagelist" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_delivery_messages_list.jsp" />  
+		<put name="title" value="Delivery Message List" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   <definition name="/deliverymessage/deliverymessagemilllist" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_delivery_message_new_mill.jsp" />  
+		<put name="title" value="Delivery Message List" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   
+   
+   <definition name="/deliverymessage/inboxdeliverylist" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_inboxdeliverymessage_list.jsp" />  
+		<put name="title" value="Delivery Message List" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   <!-- added for RFS@5922 -->
+   <definition name="/deliverymessage/inboxdeliverymsgmilldetail" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_inboxdeliverymessage_mill_list.jsp" />  
+		<put name="title" value="Delivery Message List" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   <!-- added for RFS@5922 -->
+   <!-- Delivery Message Detail -->
+   <definition name="/deliverymessage/deliverymessagedetail" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_delivery_message_detail.jsp" />  
+		<put name="title" value="Delivery Message/Good Receipt Detail" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+    <definition name="/deliverymessage/deliverymessagemilldetail" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_delivery_message_history.jsp" />  
+		<put name="title" value="Delivery Message History" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   
+    <definition name="/deliverymessage/inboxdeliverymessagedetail" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_inboxdelivery_message_detail.jsp" />  
+		<put name="title" value="Delivery Message Detail" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+   </definition>
+   <!-- Delivery Message New -->
+   
+   <definition name="/deliverymessage/deliverymessagenew" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_delivery_message_new.jsp" />  
+		<put name="title" value = "New Delivery Message" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+		
+   </definition>
+   
+   <definition name="/deliverymessage/milldeliverymessagenew" extends="main">
+		<put name="mainbody" value="/deliverymessage/mod_mill_delivery_message_new.jsp" />  
+		<put name="title" value = "New Delivery Message" />
+		<put name="specificjs" value="/js/deliverymessage.js" />
+		
+   </definition>
+   
+   <!--OrderStatus List Page-->
+	<definition name="/orderStatus/statusList" extends="main">
+		<put name="mainbody" value="/orderstatus/mod_order_status_list.jsp" />  
+		<put name="title" value="Order Status List" />
+		<put name="specificjs" value="/js/orderstatus.js" />
+	</definition>
+	
+	<definition name="/orderStatus/inboxstatusList" extends="main">
+		<put name="mainbody" value="/orderstatus/mod_inbox_orderstatus_list.jsp" />  
+		<put name="title" value="Order Status List" />
+		<put name="specificjs" value="/js/orderstatus.js" />
+	</definition>
+	
+	<!--OrderStatus Detail Page-->
+	<definition name="/orderStatus/statusDetail" extends="main">
+		<put name="mainbody" value="/orderstatus/mod_order_status_detail.jsp" />  
+		<put name="title" value="Order Status Detail" />
+		<put name="specificjs" value="/js/orderstatus.js" />
+	</definition>
+	<definition name="/orderStatus/inboxstatusDetail" extends="main">
+		<put name="mainbody" value="/orderstatus/mod_inbox_orderstatus_detail.jsp" />  
+		<put name="title" value="Order Status Detail" />
+		<put name="specificjs" value="/js/orderstatus.js" />
+	</definition>
+		
+		<!--OrderStatus New Page-->
+	<definition name="/orderStatus/statusNew" extends="main">
+		<put name="mainbody" value="/orderstatus/mod_order_status_new.jsp" />  
+		<put name="title" value="Order Status New" />
+		<put name="specificjs" value="/js/orderstatus.js" />
+	</definition>
+	
+	<!--Usage List Page-->
+	<definition name="/usage/usageList" extends="main">
+		<put name="mainbody" value="/usage/mod_usage_list.jsp" />  
+		<put name="title" value="Usage List" />
+		<put name="specificjs" value="/js/usage.js" />
+	</definition>
+	
+	<!--Usage List Filter Page-->
+	<definition name="/usage/usageFilter" extends="main">
+		<put name="mainbody" value="/usage/mod_usage_filter.jsp" />  
+		<put name="title" value="Usage Filter" />
+		<put name="specificjs" value="/js/usage.js" />
+	</definition>
+	
+	<!--Usage Detail Page-->
+	<definition name="/usage/usageDetail" extends="main">
+		<put name="mainbody" value="/usage/mod_usage_detail.jsp" />  
+		<put name="title" value="Usage Detail" />
+		<put name="specificjs" value="/js/usage.js" />
+	</definition>
+	
+	<!--Usage History List Page-->
+	<definition name="/usage/usagehistorylist" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/usage/mod_usage_history.jsp" />  
+		<put name="title" value="Usage History" />
+	</definition>
+   
+   <!--Usage History Detail Page-->
+	<definition name="/usage/usagehistorydetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/usage/mod_usage_history_detail.jsp" />  
+		<put name="title" value="Usage History Detail" />
+	</definition>
+
+	<!--New Usage Page-->
+	<definition name="/usage/newusage" extends="main">
+		<put name="mainbody" value="/usage/mod_usage_new.jsp" />  
+		<put name="title" value="New Usage" />
+		<put name="specificjs" value="/js/usage.js" />
+	</definition>
+	
+	<!--  Book Specification -->
+	
+	<definition name="/bookspecification/bookspeclist" extends="main">
+		<put name="mainbody" value="/bookspecification/mod_book_spec_list.jsp" />  
+		<put name="title" value="Book Specification" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+	
+	<definition name="/bookspecification/bookspecdetail" extends="main">
+		<put name="mainbody" value="/bookspecification/mod_book_spec_detail.jsp" />  
+		<put name="title" value="Book Specification Detail" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+	
+	<definition name="/bookspecification/pobookspecdetail" extends="main">
+		<put name="mainbody" value="/bookspecification/mod_book_spec_history_detail.jsp" />  
+		<put name="title" value="Book Specification Detail" />
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+	</definition>
+	
+	<definition name="/bookspecification/planningbookspecdetail" extends="main">
+		<put name="mainbody" value="/bookspecification/mod_book_spec_history_detail.jsp" />  
+		<put name="title" value="Book Specification Detail" />
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+	</definition>
+	
+	<definition name="/bookspecification/bookspechistorylist" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/bookspecification/mod_book_spec_history.jsp" />  
+		<put name="title" value="Book Specification History" />
+	</definition>
+   
+	<definition name="/bookspecification/bookspechistorydetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/bookspecification/mod_book_spec_history_detail.jsp" />  
+		<put name="title" value="Book Specification History Detail" />
+	</definition>
+	
+	<definition name="/bookspecification/bookspecfilter" extends="main">
+		<put name="mainbody" value="/bookspecification/mod_book_spec_filter.jsp" />  
+		<put name="title" value="Book Specification Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+		
+	<!--  Inventory -->
+	<definition name="/inventory/inventorysearch" extends="main">
+		<put name="mainbody" value="/inventory/mod_inventory_search.jsp" />  
+		<put name="title" value="Inventory Search" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+	
+	<definition name="/inventory/inventorysearching" extends="main">
+		<put name="mainbody" value="/inventory/mod_inventory_search_detail.jsp" />  
+		<put name="title" value="Inventory Search detail" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+		
+		
+	<!--  Reports -->
+	<definition name="/reports/reportsearch" extends="main">
+		<put name="mainbody" value="/reports/mod_report_search.jsp" />  
+		<put name="title" value="Report Search" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+	
+	<definition name="/reports/reportsearchdetail" extends="main">
+		<put name="mainbody" value="/reports/mod_report_search_detail.jsp" />  
+		<put name="title" value="Report Search detail" />
+	</definition>
+	<definition name="/reports/reportbookspecdetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_bookspec_detail.jsp" />  
+		<put name="title" value="Report Book Specification Detail" />
+	</definition>
+	
+	<definition name="/reports/reportusagedetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_usage_detail.jsp" />  
+		<put name="title" value="Report Usage Detail" />
+	</definition>
+	
+	<definition name="/reports/reportinventorydetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_inventory_detail.jsp" />  
+		<put name="title" value="Report Inventory Detail" />
+	</definition>
+	
+	<definition name="/reports/reportplanningdetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_planning_detail.jsp" /> 
+		<put name="specificjs" value="/js/planning.js" /> 
+		<put name="title" value="Report Planning Detail" />
+	</definition>
+	
+	<definition name="/reports/reportdeliverymessagedetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_deliverymessage_detail.jsp" />  
+		<put name="title" value="Report DeliveryMessage Detail" />
+	</definition>
+	
+	<definition name="/reports/reportorderstatusdetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_orderstatus_detail.jsp" />  
+		<put name="title" value="Report OrderStatus Detail" />
+	</definition>
+	
+	<definition name="/reports/reportpurchaseorderdetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_purchaseorder_detail.jsp" />  
+		<put name="title" value="Report PurchaseOrder Detail" />
+		<put name="specificjs" value="/js/purchaseorder.js" />
+	</definition>
+	
+	<definition name="/reports/reportgoodsreceiptdetail" extends="main">
+		<put name="menu" value="/common/mod_popup_close.jsp" />
+		<put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/reports/mod_report_goodsreceipt_detail.jsp" />  
+		<put name="title" value="Report GoodsReceipt Detail" />
+	</definition>
+	
+	<!--  Goods Receipt -->
+	
+	<definition name="/goodsreceipt/goodsreceiptlist" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_goods_receipt_list.jsp" />  
+		<put name="title" value="Goods Receipt List page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	<!-- RFS 5592, @Author Anshu Bhardwaj -->
+	<definition name="/goodsreceipt/goodsreceiptpapernew" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_goods_receipt_paper_new.jsp" />  
+		<put name="title" value="New Paper Goods Receipt Page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>	
+	<definition name="/goodsreceipt/goodsreceiptpaperhistory" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_goods_receipt_paper_history.jsp" />  
+		<put name="title" value="Paper Goods Receipt History Page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>	
+	<!-- End of RFS changes -->
+	
+	<definition name="/goodsreceipt/inboxgoodsreceiptlist" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_inboxgoodsreceipt_list.jsp" />  
+		<put name="title" value="Goods Receipt List page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	
+	<definition name="/goodsreceipt/goodsreceiptdetial" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_goods_receipt_detail.jsp" />  
+		<put name="title" value="Goods Receipt Detail page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	
+	<definition name="/goodsreceipt/inboxgoodsreceiptdetial" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_inboxgoodsreceipt_detail.jsp" />  
+		<put name="title" value="Goods Receipt Detail page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	<definition name="/goodsreceipt/goodsreceiptnew" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_goods_receipt_new.jsp" />  
+		<put name="title" value="New Goods Receipt page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	<definition name="/goodsreceipt/millgoodsreceiptnew" extends="main">
+		<put name="mainbody" value="/goodsreceipt/mod_mill_goods_receipt_new.jsp" />  
+		<put name="title" value="New Goods Receipt page" />
+		<put name="specificjs" value="/js/goodsreceipt.js" />
+	</definition>
+	
+	
+	<definition name="/deliverymessage/popupdetail" extends="main">
+	<put name="menu" value="/common/mod_popup_close.jsp" />
+	<put name="usersupport" value="/common/mod_link_green.jsp"/>
+	<put name="mainbody" value="/deliverymessage/mod_delivery_message_detail.jsp" />  
+	<put name="title" value="Delivery Message Details" />
+	</definition>
+	
+	<!-- Cost Accounting-->
+	
+	<definition name="/costaccounting/approvallist" extends="main">
+		<put name="mainbody" value="/costaccounting/mod_deliverymessage_approval_list.jsp" />  
+		<put name="title" value="Approval List page" />
+		<put name="specificjs" value="/js/costaccounting.js" />
+	</definition>
+	
+	<definition name="/costaccounting/dmApprovalfilter" extends="main">
+		<put name="mainbody" value="/costaccounting/mod_deliverymessage_approval_filter.jsp" />  
+		<put name="title" value="Approval List Filter Page" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/costaccounting.js" />
+   </definition>
+   
+   <definition name="/costaccounting/deliverymessagedetail" extends="main">
+		<put name="mainbody" value="/costaccounting/mod_deliverymessage_approval_detail.jsp" />  
+		<put name="title" value="Approval Message Detail" />
+		<put name="specificjs" value="/js/costaccounting.js" />
+   </definition>
+   
+   <!-- Mismatch Report -->
+	
+	<definition name="/mismatchreport" extends="main">	
+		<put name="mainbody" value="/mismatchreport/mod_mismatch_report.jsp" />  
+		<put name="title" value="Purchase Order Mismatch Report page" />		
+	</definition>
+	
+	<definition name="/error" extends="main">
+		<put name="mainbody" value="/common/mod_error.jsp" />  
+		<put name="title" value="Error page" />
+    </definition>
+    
+    <definition name="/popuperror" extends="main">
+    	<put name="menu" value="/common/mod_blank.jsp" />
+	    <put name="usersupport" value="/common/mod_link_green.jsp"/>
+		<put name="mainbody" value="/common/mod_popup_error.jsp" />  
+		<put name="title" value="Popup Error page" />
+    </definition>
+    
+	<definition name="/success" extends="main">
+		<put name="mainbody" value="/common/mod_success.jsp" />  
+		<put name="title" value="Success page" />
+    </definition>
+	
+	<definition name="/dropship/shippingConfirmation" extends="main">
+		<put name="mainbody" value="/dropship/uploadShipInfo.jsp" />  
+		<put name="title" value="Upload shipment confimation" />
+    </definition>
+	
+	<definition name="/dropship/shippingConfirmationDetail" extends="main">
+		<put name="mainbody" value="/dropship/shipping_confimation_detail.jsp" />  
+		<put name="title" value="Shipment Confimation Details" />
+    </definition>
+    
+    
+    <definition name="/dropship/dropshipinstructions" extends="main">
+		<put name="mainbody" value="/dropship/dropshipinstruction.jsp" />  
+		<put name="title" value="DropShip Instructions" />
+    </definition>
+    
+    <definition name="/dropship/dropInstFilterDisplay" extends="main">
+		<put name="mainbody" value="/dropship/dropshipInst_filter.jsp" />  
+		<put name="title" value="Dropship Instructions Filter" />
+		<put name="specificjs" value="/js/datetimepicker.js" />
+		<put name="specificjs" value="/js/bookspec.js" />
+	</definition>
+</tiles-definitions>

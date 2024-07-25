@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>PIXApplication</groupId>
+	<artifactId>PIXApplication</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>ear</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<earSourceDirectory>EarContent</earSourceDirectory>
+					<applicationXml>${basedir}/META-INF/application.xml</applicationXml>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+
+
+		<dependency>
+			<groupId>PIXApplicationEJB</groupId>
+			<artifactId>PIXApplicationEJB</artifactId>
+			<type>ejb</type>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>PIXApplicationWeb</groupId>
+			<artifactId>PIXApplicationWeb</artifactId>
+			<type>war</type>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>

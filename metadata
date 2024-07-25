@@ -1,0 +1,2500 @@
+{
+  "version": 2.0,
+  "projects": [
+    {
+      "root": "Src/PIXApplicationEJB",
+      "filesToScan": [
+        "Src/PIXApplicationEJB/ejbModule/ExceptionsBundle.xml",
+        "Src/PIXApplicationEJB/pom.xml",
+        "Src/PIXApplicationEJB/ejbModule/PIX.xml",
+        "Src/PIXApplicationEJB/ejbModule/META-INF/MANIFEST.MF",
+        "Src/PIXApplicationEJB/ejbModule/META-INF/ejb-jar.xml",
+        "Src/PIXApplicationEJB/ejbModule/sessions.xml",
+        "Src/PIXApplicationEJB/ejbModule/XMLMappings.properties",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/admin/ejb/AdminEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/admin/interfaces/AdminLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/admin/interfaces/AdminLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/arptitlesetup/ejb/PotentialARPEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/arptitlesetup/interfaces/PotentialARPLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/arptitlesetup/interfaces/PotentialARPLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/bookspecification/ejb/BookSpecEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/bookspecification/interfaces/BookSpecLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/bookspecification/interfaces/BookSpecLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/common/PIXConstants.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/common/PIXENV.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/common/PIXReadProperties.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/common/PIXUtil.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/costaccounting/ejb/CostAccountingEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/costaccounting/interfaces/CostAccountingLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/costaccounting/interfaces/CostAccountingLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/deliverymessage/ejb/DeliveryMessageEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/deliverymessage/interfaces/DeliveryMessageLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/deliverymessage/interfaces/DeliveryMessageLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/dropship/DropShipConstants.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/dropship/ejb/DropShipEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/dropship/interfaces/DropShipLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/dropship/interfaces/DropShipLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/exporttoexcel/ejb/ExportToExcelEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/exporttoexcel/interfaces/ExportToExcelLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/exporttoexcel/interfaces/ExportToExcelLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/fileuploading/ejb/FileUploadingEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/fileuploading/interfaces/FileUploadingLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/fileuploading/interfaces/FileUploadingLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/goodsreceipt/ejb/GoodsReceiptEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/goodsreceipt/interfaces/GoodsReceiptLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/goodsreceipt/interfaces/GoodsReceiptLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/home/ejb/HomePageEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/home/interfaces/HomePageLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/home/interfaces/HomePageLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/inventory/ejb/InventoryEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/inventory/interfaces/InventoryLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/inventory/interfaces/InventoryLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/mismatchreport/ejb/MismatchReportEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/mismatchreport/interfaces/MismatchReportLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/mismatchreport/interfaces/MismatchReportLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/orderstatus/ejb/OrderStatusEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/orderstatus/interfaces/OrderStatusLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/orderstatus/interfaces/OrderStatusLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/planning/ejb/PlanningEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/planning/interfaces/PlanningLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/planning/interfaces/PlanningLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/purchaseorder/ejb/PurchaseOrderEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/purchaseorder/interfaces/PurchaseOrderLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/purchaseorder/interfaces/PurchaseOrderLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/releasetopix/ejb/ReleaseToPIXEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/releasetopix/interfaces/ReleaseToPIXLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/releasetopix/interfaces/ReleaseToPIXLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/reports/ejb/ReportEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/reports/interfaces/ReportLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/reports/interfaces/ReportLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/usage/ejb/UsageEJB.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/usage/interfaces/UsageLocal.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/business/usage/interfaces/UsageLocalHome.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/admin/AdminDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/admin/AdminDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/arptitlesetup/PotentialARPDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/arptitlesetup/PotentialARPDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/base/BaseDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/base/DAOFactory.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/bookspecification/BookSpecDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/bookspecification/BookSpecDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/costaccounting/CostAccountingDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/costaccounting/CostAccountingDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/deliverymessage/DeliveryMessageDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/deliverymessage/DeliveryMessageDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/dropship/DropInstDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/dropship/DropShipDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/dropship/DropShipDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/dropship/ShipmentConfDetailDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/exporttoexcel/ExportToExcelDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/exporttoexcel/IExportToExcelDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/fileuploading/FileUploadingDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/fileuploading/FileUploadingDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/goodsreceipt/GoodsReceiptDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/goodsreceipt/GoodsReceiptDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/home/HomePageDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/home/HomePageDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/inventory/InventoryDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/inventory/InventoryDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/mismatchreport/MismatchReportDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/mismatchreport/MismatchReportDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/orderstatus/OrderStatusDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/orderstatus/OrderStatusDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/planning/PlanningDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/planning/PlanningDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/purchaseorder/PurchaseOrderDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/purchaseorder/PurchaseOrderDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/releasetopix/ReleaseToPIXDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/releasetopix/ReleaseToPIXDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/reports/ReportDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/reports/ReportDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/usage/UsageDAO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dao/usage/UsageDAOImpl.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/Party.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/PartyTransport.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/User.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/UserCountDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/UserParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/UserPriv.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/admin/UserRole.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/arptitlesetup/ArpSetUpResult.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/arptitlesetup/FlipreportdetailsArp.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/arptitlesetup/FlipreportmasterArp.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/arptitlesetup/PotentialARP.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/arptitlesetup/WqstatesArp.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpec.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecBinding.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecClassif.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecMargin.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecMedia.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecMisc.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecNonPress.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecPartyContact.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/bookspecification/BookSpecPress.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Country.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Currency.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/DeliveryMessageFile.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/DeliveryMessageRoll.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Inbox.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/InboxLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/PmsPoInterface.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Reference.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Status.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/Table.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/TitlePrinting.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/ToleranceLimit.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/common/UOM.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/deliverymessage/DeliveryMessage.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/deliverymessage/DeliveryMessageLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/dropship/DropInstDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/dropship/ShipConfDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/dropship/ShipConfFromPixDS.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/exporttoexcel/ExportToExcelDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/goodsreceipt/GoodsReceipt.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/goodsreceipt/GoodsReceiptLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/inventory/Inventory.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/mismatchreport/MismatchDetailsDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/orderstatus/OrderStatus.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/orderstatus/OrderStatusLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/orderstatus/StatusTimeline.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/planning/Planning.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/planning/PlanningParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/planning/PlanningPartyContact.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/DropshipDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POHeader.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POLineParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POLinePartyContact.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POPartyContact.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POSuppliedComp.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POSuppliedCompParty.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/POSuppliedCompPartyCon.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/purchaseorder/PriceDetail.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/releasetopix/CustomBookSpecReleaseDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/releasetopix/CustomPOReleaseDTO.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/reports/Report.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/reports/ReportPixHistory.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/usage/Usage.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/dto/usage/UsageLine.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/exception/AppException.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/exception/Exceptions.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/exception/Loader.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/exception/MismatchQtyException.java",
+        "Src/PIXApplicationEJB/ejbModule/com/pearson/pix/exception/XMLBundle.java",
+        "Src/PIXApplicationEJB/ejbModule/META-INF/jboss.xml",
+        "Src/PIXApplicationEJB/.debricked-maven-dependencies.tgf"
+      ],
+      "source-dirs": [],
+      "excluded-files": [],
+      "properties": {
+        "java": {
+          "version": "1.6",
+          "classpath": [
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-core",
+              "version": "2.17.1",
+              "path": "Libs/java/1003650583/log4j-core-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-api",
+              "version": "2.17.1",
+              "path": "Libs/java/895242674/log4j-api-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-web",
+              "version": "2.17.1",
+              "path": "Libs/java/-40376264/log4j-web-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.activation",
+              "id": "activation",
+              "version": "1.1",
+              "path": "Libs/java/1084407795/activation-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle.toplink",
+              "id": "toplink",
+              "version": "10.1.3.0.0.060118",
+              "path": "Libs/java/-1908651983/toplink-10.1.3.0.0.060118.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "antlr",
+              "id": "antlr",
+              "version": "2.7.6",
+              "path": "Libs/java/244860424/antlr-2.7.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-logging",
+              "id": "commons-logging",
+              "version": "1.0.4",
+              "path": "Libs/java/918441784/commons-logging-1.0.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.servlet",
+              "id": "jboss-servlet-api_4.0_spec",
+              "version": "2.0.0.Final",
+              "path": "Libs/java/387051887/jboss-servlet-api_4.0_spec-2.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.ejb",
+              "id": "ejb-api",
+              "version": "3.0",
+              "path": "Libs/java/-2028291613/ejb-api-3.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "axis",
+              "id": "axis",
+              "version": "1.2.1",
+              "path": "Libs/java/-498602595/axis-1.2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "wsdl4j",
+              "id": "wsdl4j",
+              "version": "1.5.1",
+              "path": "Libs/java/928819710/wsdl4j-1.5.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-awt-util",
+              "version": "1.6",
+              "path": "Libs/java/-365201628/batik-awt-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-dom",
+              "version": "1.6",
+              "path": "Libs/java/-1559677879/batik-dom-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-svggen",
+              "version": "1.6",
+              "path": "Libs/java/-1159827871/batik-svggen-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-util",
+              "version": "1.6",
+              "path": "Libs/java/-1461191209/batik-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-xml",
+              "version": "1.6",
+              "path": "Libs/java/-1045270596/batik-xml-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor",
+              "version": "1.1",
+              "path": "Libs/java/1159924017/castor-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cglib",
+              "id": "cglib-full",
+              "version": "2.0.2",
+              "path": "Libs/java/276514927/cglib-full-2.0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "jta",
+              "version": "1.0.1B",
+              "path": "Libs/java/1444285616/jta-1.0.1B.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "log4j",
+              "id": "log4j",
+              "version": "1.2.13",
+              "path": "Libs/java/744567578/log4j-1.2.13.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xerces",
+              "id": "xerces",
+              "version": "1.4.0",
+              "path": "Libs/java/-1427914244/xerces-1.4.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.mail",
+              "id": "mail",
+              "version": "1.5.0-b01",
+              "path": "Libs/java/-1985347889/mail-1.5.0-b01.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-xml",
+              "version": "1.3.1",
+              "path": "Libs/java/1846703806/castor-xml-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-core",
+              "version": "1.3.1",
+              "path": "Libs/java/91169840/castor-core-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cewolf",
+              "id": "cewolf",
+              "version": "1.0",
+              "path": "Libs/java/155985398/cewolf-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "crimson",
+              "id": "crimson",
+              "version": "1.1.3",
+              "path": "Libs/java/1107782946/crimson-1.1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jfreechart",
+              "version": "1.0.0",
+              "path": "Libs/java/-2120414174/jfreechart-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jcommon",
+              "version": "1.0.0",
+              "path": "Libs/java/-295011955/jcommon-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-beanutils",
+              "id": "commons-beanutils",
+              "version": "1.6",
+              "path": "Libs/java/-690614532/commons-beanutils-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-codec",
+              "id": "commons-codec",
+              "version": "1.3",
+              "path": "Libs/java/-155573435/commons-codec-1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle",
+              "id": "classes12",
+              "version": "10.2.0.2.0",
+              "path": "Libs/java/1651691590/classes12-10.2.0.2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-collections",
+              "id": "commons-collections",
+              "version": "2.1",
+              "path": "Libs/java/1915308864/commons-collections-2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-digester",
+              "id": "commons-digester",
+              "version": "1.6",
+              "path": "Libs/java/-1783974596/commons-digester-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xml-apis",
+              "id": "xml-apis",
+              "version": "1.0.b2",
+              "path": "Libs/java/-193169146/xml-apis-1.0.b2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-discovery",
+              "id": "commons-discovery",
+              "version": "0.2",
+              "path": "Libs/java/1410430423/commons-discovery-0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-fileupload",
+              "id": "commons-fileupload",
+              "version": "1.0",
+              "path": "Libs/java/1395674166/commons-fileupload-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-httpclient",
+              "id": "commons-httpclient",
+              "version": "3.0",
+              "path": "Libs/java/-606895880/commons-httpclient-3.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "junit",
+              "id": "junit",
+              "version": "3.8.1",
+              "path": "Libs/java/-832331127/junit-3.8.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-io",
+              "id": "commons-io",
+              "version": "1.3.1",
+              "path": "Libs/java/914085596/commons-io-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-lang",
+              "id": "commons-lang",
+              "version": "1.0.1",
+              "path": "Libs/java/-1461776549/commons-lang-1.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-validator",
+              "id": "commons-validator",
+              "version": "1.1.4",
+              "path": "Libs/java/495948161/commons-validator-1.1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "dom4j",
+              "id": "dom4j",
+              "version": "1.4",
+              "path": "Libs/java/-1894560974/dom4j-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jaxen",
+              "id": "jaxen",
+              "version": "1.0-FCS",
+              "path": "Libs/java/-1547489699/jaxen-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "saxpath",
+              "id": "saxpath",
+              "version": "1.0-FCS",
+              "path": "Libs/java/987788743/saxpath-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "msv",
+              "id": "msv",
+              "version": "20020414",
+              "path": "Libs/java/1441152730/msv-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "relaxngDatatype",
+              "id": "relaxngDatatype",
+              "version": "20020414",
+              "path": "Libs/java/1202016448/relaxngDatatype-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "isorelax",
+              "id": "isorelax",
+              "version": "20020414",
+              "path": "Libs/java/1014268482/isorelax-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.lowagie",
+              "id": "itext",
+              "version": "1.4",
+              "path": "Libs/java/-1911926443/itext-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "gnujaxp",
+              "id": "gnujaxp",
+              "version": "1.0.0",
+              "path": "Libs/java/2134189690/gnujaxp-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "releasetopixdto_PIX",
+              "id": "releasetopixdto_PIX",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/1479235277/releasetopixdto_PIX-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "javax.transaction-api",
+              "version": "1.2",
+              "path": "Libs/java/-1750301811/javax.transaction-api-1.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jakarta.persistence",
+              "id": "jakarta.persistence-api",
+              "version": "2.2.3.redhat-00001",
+              "path": "Libs/java/475284913/jakarta.persistence-api-2.2.3.redhat-00001.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.3_spec",
+              "version": "2.0.0.Final-redhat-00002",
+              "path": "Libs/java/-2031480927/jboss-transaction-api_1.3_spec-2.0.0.Final-redhat-00002.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss",
+              "id": "jboss-ejb-client",
+              "version": "4.0.37.Final",
+              "path": "Libs/java/-1676063369/jboss-ejb-client-4.0.37.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-1664205020/jboss-marshalling-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling-river",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-665005595/jboss-marshalling-river-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-api",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1595692252/xnio-api-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.threads",
+              "id": "jboss-threads",
+              "version": "2.3.3.Final",
+              "path": "Libs/java/-1742218802/jboss-threads-2.3.3.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-nio",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1495687126/xnio-nio-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.remoting",
+              "id": "jboss-remoting",
+              "version": "5.0.17.Final",
+              "path": "Libs/java/-621146743/jboss-remoting-5.0.17.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.logging",
+              "id": "jboss-logging",
+              "version": "3.4.0.Final",
+              "path": "Libs/java/-1119607077/jboss-logging-3.4.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.ejb",
+              "id": "jboss-ejb-api_3.2_spec",
+              "version": "1.0.0.Final",
+              "path": "Libs/java/1861259773/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.2_spec",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-556380932/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.client",
+              "id": "wildfly-client-config",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-1681974247/wildfly-client-config-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.common",
+              "id": "wildfly-common",
+              "version": "1.5.1.Final",
+              "path": "Libs/java/293512385/wildfly-common-1.5.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.discovery",
+              "id": "wildfly-discovery-client",
+              "version": "1.2.1.Final",
+              "path": "Libs/java/-702350206/wildfly-discovery-client-1.2.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.security",
+              "id": "wildfly-elytron",
+              "version": "1.1.5.Final",
+              "path": "Libs/java/-1637568932/wildfly-elytron-1.1.5.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.transaction",
+              "id": "wildfly-transaction-client",
+              "version": "1.1.10.Final",
+              "path": "Libs/java/291397083/wildfly-transaction-client-1.1.10.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly",
+              "id": "wildfly-naming-client",
+              "version": "1.0.13.Final",
+              "path": "Libs/java/-2138662211/wildfly-naming-client-1.0.13.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.jbossts",
+              "id": "jbossjta",
+              "version": "4.16.6.Final",
+              "path": "Libs/java/-780379827/jbossjta-4.16.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "struts",
+              "id": "struts",
+              "version": "1.2.7",
+              "path": "Libs/java/1629958275/struts-1.2.7.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-chain",
+              "id": "commons-chain",
+              "version": "1.0",
+              "path": "Libs/java/699520118/commons-chain-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "oro",
+              "id": "oro",
+              "version": "2.0.8",
+              "path": "Libs/java/371729795/oro-2.0.8.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-el",
+              "version": "1.2.9",
+              "path": "Libs/java/1073831191/struts-el-1.2.9.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-legacy",
+              "version": "1.1",
+              "path": "Libs/java/-374467699/struts-legacy-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "poi",
+              "id": "poi-2.5.1-final",
+              "version": "20040804",
+              "path": "Libs/java/-822940489/poi-2.5.1-final-20040804.jar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "root": "Src/PIXApplicationWeb",
+      "filesToScan": [
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/ApplicationResources.properties",
+        "Src/PIXApplicationWeb/src/META-INF/MANIFEST.MF",
+        "Src/PIXApplicationWeb/src/ApplicationResources.properties",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/AddPubUnitForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/AdminAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/LoginAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/LoginForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/SupplierForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/action/UserForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/command/AdminCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/command/LoginCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/admin/delegate/AdminDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxEnableTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxEventTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxInit.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxManualTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxTimerTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/AjaxUtils.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxConfig.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxElement.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxErrorHandler.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxEvent.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxGroup.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxHandlerConfig.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxRequestHandler.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/config/AjaxResponseHandler.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/RandNoGeneretorTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/ajax/progressbar/SessionFormTag.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/arptitlesetup/action/PotentialARPAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/arptitlesetup/action/PotentialARPForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/arptitlesetup/command/PotentialARPCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/arptitlesetup/delegate/PotentialARPDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/action/BaseAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/action/BaseForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/command/BaseCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/command/Command.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/CacheControlFilter.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/FrontEndConstants.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/PDFFileDownload.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/ServiceLocator.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/base/common/SessionHelper.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/boluploading/action/BOLFileDownLoadAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/boluploading/action/BOLUploadingAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/boluploading/action/BOLUploadingForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/boluploading/command/BOLUploadingCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/boluploading/delegate/BOLUploadingDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/bookspecification/action/BookSpecAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/bookspecification/action/BookSpecForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/bookspecification/command/BookSpecCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/bookspecification/delegate/BookSpecDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/costaccounting/action/CostAccountingAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/costaccounting/action/CostAccountingForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/costaccounting/command/CostAccountingCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/costaccounting/delegate/CostAccountingDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/deliverymessage/action/DeliveryMessageAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/deliverymessage/action/DeliveryMessageForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/deliverymessage/command/DeliveryMessageCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/deliverymessage/delegate/DeliveryMessageDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/action/DropshipAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/action/UploadShipInfoForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/command/DropshipCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/delegate/DropshipDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/dropshipinstruction/action/AjaxAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/dropshipinstruction/action/DropInstAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/dropshipinstruction/action/DropInstForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/dropship/dropshipinstruction/Command/DropInstCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/exporttoexcel/action/ExportToExcelAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/exporttoexcel/action/ExportToExcelForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/exporttoexcel/command/ExportToExcelCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/exporttoexcel/delegate/ExportToExcelDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/action/FileDownLoadAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/action/FileUploadingAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/action/FileUploadingForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/command/AjaxUploadStatusServlet.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/command/FileUploadingCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/command/FileUploadListener.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/command/FileUploadServlet.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/fileuploading/delegate/FileUploadingtDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/goodsreceipt/action/GoodsReceiptAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/goodsreceipt/action/GoodsReceiptForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/goodsreceipt/command/GoodsReceiptCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/goodsreceipt/delegate/GoodsReceiptDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/home/action/HomePageAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/home/action/HomePageForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/home/command/HomePageCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/home/delegate/HomePageDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/inventory/action/InventoryAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/inventory/action/InventoryForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/inventory/command/InventoryCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/inventory/delegate/InventoryDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/mismatchreport/action/MismatchReportAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/mismatchreport/action/MismatchReportForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/mismatchreport/command/ExportMismatchReport.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/mismatchreport/command/MismatchReportCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/mismatchreport/delegate/MismatchReportDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/orderstatus/action/OrderStatusAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/orderstatus/action/OrderStatusForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/orderstatus/command/OrderStatusCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/orderstatus/delegate/OrderStatusDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/BookSpecificationPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/CommonPdfInterface.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/DeliveryMessageApprovalPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/DeliveryMessagePdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/DropshipPackingSlipPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/GoodsReceiptPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/OrderStatusPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/PlanningMillPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/Planningpdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/PurchaseOrderMillPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/PurchaseOrderPdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/pdf/UsagePdf.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/planning/action/PlanningAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/planning/action/PlanningForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/planning/command/PlanningCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/planning/delegate/PlanningDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/action/PurchaseOrderAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/action/PurchaseOrderDetailForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/action/PurchaseOrderDetailFormHist.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/action/PurchaseOrderListForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/command/PurchaseOrderCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/purchaseorder/delegate/PurchaseOrderDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/reports/action/ReportAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/reports/action/ReportForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/reports/command/ReportCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/reports/delegate/ReportDelegate.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/usage/action/UsageAction.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/usage/action/UsageForm.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/usage/action/UsageFormList.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/usage/command/UsageCommand.java",
+        "Src/PIXApplicationWeb/src/com/pearson/pix/presentation/usage/delegate/UsageDelegate.java",
+        "Src/PIXApplicationWeb/src/log4j.properties",
+        "Src/PIXApplicationWeb/pom.xml",
+        "Src/PIXApplicationWeb/WebContent/admin/add_pubunit_popUp.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/add_supplier_popUp.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/loginexpired.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_add_edit_supplier.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_add_pub_unit.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_add_user.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_edit_profile.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_managepubunits.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_managesuppliers.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_manageusers.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_pub_unitlistFilter.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_supplier_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/admin/mod_user_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_list.jsp.bak",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_message.jsp",
+        "Src/PIXApplicationWeb/WebContent/arptitlesetup/mod_potentialarp_result.jsp",
+        "Src/PIXApplicationWeb/WebContent/bookspecification/mod_book_spec_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/bookspecification/mod_book_spec_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/bookspecification/mod_book_spec_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/bookspecification/mod_book_spec_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/bookspecification/mod_book_spec_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/close.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/datachange.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/formbegin.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/logout.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_blank.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_error.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_footer.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_home.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_link_green.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_menu.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_popup_close.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_popup_error.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_success.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_tabs.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/mod_user_support.jsp",
+        "Src/PIXApplicationWeb/WebContent/common/taglibs.jsp",
+        "Src/PIXApplicationWeb/WebContent/costaccounting/mod_deliverymessage_approval_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/costaccounting/mod_deliverymessage_approval_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/costaccounting/mod_deliverymessage_approval_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/costaccounting/mod_deliverymessage_ownedQty_popup.jsp",
+        "Src/PIXApplicationWeb/WebContent/css/pixcss.css",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_messages_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_bol_file.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_download_files.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_delivery_message_new_mill.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_inboxdeliverymessage_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_inboxdeliverymessage_mill_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_inboxdelivery_message_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/deliverymessage/mod_mill_delivery_message_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/dropshipinstruction.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/dropshipInst_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/DropShipmentConfermationTemplate.xls",
+        "Src/PIXApplicationWeb/WebContent/dropship/DropshipTemplate.xls",
+        "Src/PIXApplicationWeb/WebContent/dropship/DropshipTemplatebkp.xls",
+        "Src/PIXApplicationWeb/WebContent/dropship/shipmentConfError.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/shipping_confimation_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/uploadShipInfo.jsp",
+        "Src/PIXApplicationWeb/WebContent/dropship/Vendor_shipping_confirmation-mock_up.xls",
+        "Src/PIXApplicationWeb/WebContent/dropship/Vendor_shipping_confirmation-mock_upbkp.xls",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/deliverymessage_popup.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_paper_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_paper_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_goods_receipt_rolldtl_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_inboxgoodsreceipt_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_inboxgoodsreceipt_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/goodsreceipt/mod_mill_goods_receipt_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/index.jsp",
+        "Src/PIXApplicationWeb/WebContent/inventory/mod_inventory_search.jsp",
+        "Src/PIXApplicationWeb/WebContent/inventory/mod_inventory_search_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/js/AbstractCollections.js",
+        "Src/PIXApplicationWeb/WebContent/js/admin.js",
+        "Src/PIXApplicationWeb/WebContent/js/AjaxPartsTaglib.js",
+        "Src/PIXApplicationWeb/WebContent/js/base.js",
+        "Src/PIXApplicationWeb/WebContent/js/blank.js",
+        "Src/PIXApplicationWeb/WebContent/js/bookspec.js",
+        "Src/PIXApplicationWeb/WebContent/js/BrowserChecker.js",
+        "Src/PIXApplicationWeb/WebContent/js/CollectionInterfaces.js",
+        "Src/PIXApplicationWeb/WebContent/js/costaccounting.js",
+        "Src/PIXApplicationWeb/WebContent/js/custom.js",
+        "Src/PIXApplicationWeb/WebContent/js/datetimepicker.js",
+        "Src/PIXApplicationWeb/WebContent/js/deliverymessage.js",
+        "Src/PIXApplicationWeb/WebContent/js/goodsreceipt.js",
+        "Src/PIXApplicationWeb/WebContent/js/HashMap.js",
+        "Src/PIXApplicationWeb/WebContent/js/HashSet.js",
+        "Src/PIXApplicationWeb/WebContent/js/helloform.js",
+        "Src/PIXApplicationWeb/WebContent/js/indexmenu.js",
+        "Src/PIXApplicationWeb/WebContent/js/jquery-ui-1.7.2.custom.min.js",
+        "Src/PIXApplicationWeb/WebContent/js/jquery.js",
+        "Src/PIXApplicationWeb/WebContent/js/jquerysso.js",
+        "Src/PIXApplicationWeb/WebContent/js/JWPAlertLogger.js",
+        "Src/PIXApplicationWeb/WebContent/js/JWPGetElementValue.js",
+        "Src/PIXApplicationWeb/WebContent/js/JWPWindowLogger.js",
+        "Src/PIXApplicationWeb/WebContent/js/LinkedHashMap.js",
+        "Src/PIXApplicationWeb/WebContent/js/LinkedHashSet.js",
+        "Src/PIXApplicationWeb/WebContent/js/menu.js",
+        "Src/PIXApplicationWeb/WebContent/js/orderstatus.js",
+        "Src/PIXApplicationWeb/WebContent/js/pixjs.js",
+        "Src/PIXApplicationWeb/WebContent/js/planning.js",
+        "Src/PIXApplicationWeb/WebContent/js/potentialarp.js",
+        "Src/PIXApplicationWeb/WebContent/js/prototype.js",
+        "Src/PIXApplicationWeb/WebContent/js/purchaseorder.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdAlerter.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdAlertErrorHandler.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdCodeExecuter.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdDoNothing.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdFormManipulator.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdIFrameDisplay.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdInnerHTML.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdPoster.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdQueryString.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdRedirecter.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdSelectbox.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdSendByID.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdSimpleRequest.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdSimpleXML.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdTextboxArea.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdWindowOpener.js",
+        "Src/PIXApplicationWeb/WebContent/js/StdXSLT.js",
+        "Src/PIXApplicationWeb/WebContent/js/usage.js",
+        "Src/PIXApplicationWeb/WebContent/js/validation.js",
+        "Src/PIXApplicationWeb/WebContent/js/xbDetectBrowser.js",
+        "Src/PIXApplicationWeb/WebContent/login.jsp",
+        "Src/PIXApplicationWeb/WebContent/META-INF/MANIFEST.MF",
+        "Src/PIXApplicationWeb/WebContent/mismatchreport/mod_mismatch_report.jsp",
+        "Src/PIXApplicationWeb/WebContent/orderstatus/mod_inbox_orderstatus_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/orderstatus/mod_inbox_orderstatus_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/orderstatus/mod_order_status_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/orderstatus/mod_order_status_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/orderstatus/mod_order_status_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_mill_planning_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_mill_planning_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_mill_planning_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_mill_planning_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_mill_planning_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_planning_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_planning_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_planning_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_planning_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/planning/mod_planning_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_furnished_order_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_furnished_order_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_inboxorder_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_mill_order_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_mill_order_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_mill_order_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_mill_purchase_order_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_order_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_order_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_order_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_order_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_order_mill_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_purchase_order_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/mod_supplied_component.jsp",
+        "Src/PIXApplicationWeb/WebContent/purchaseorder/TermsAndConditions.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_bookspec_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_deliverymessage_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_goodsreceipt_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_orderstatus_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_planning_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_purchaseorder_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_search.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_search_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/reports/mod_report_usage_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/success.jsp",
+        "Src/PIXApplicationWeb/WebContent/templates/tem_transactions.jsp",
+        "Src/PIXApplicationWeb/WebContent/test.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_filter.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_history.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_history_detail.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_list.jsp",
+        "Src/PIXApplicationWeb/WebContent/usage/mod_usage_new.jsp",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/ajax-config.dtd",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/ajax_config.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/app.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/c-1_0-rt.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/c-1_0.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/c.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/classes/ApplicationResources.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/classes/com/pearson/pix/presentation/base/common/ApplicationResources.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/classes/fileProperties.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/classes/log4j.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/fileUploading.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/fmt-1_0-rt.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/fmt-1_0.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/fmt.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/fn.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/log4j.properties",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/permittedTaglibs.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/scriptfree.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/sql-1_0-rt.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/sql-1_0.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/sql.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-bean-el-1.1.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-bean-el.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-bean.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-config.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-html-el-1.1.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-html-el.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-html.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-logic-el-1.1.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-logic-el.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-logic.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-nested.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-template.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-tiles-el-1.1.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-tiles-el.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/struts-tiles.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/tiles-defs.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/validation.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/validator-rules.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/validator_1_1_3.dtd",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/web.xml",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/x-1_0-rt.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/x-1_0.tld",
+        "Src/PIXApplicationWeb/WebContent/WEB-INF/x.tld",
+        "Src/PIXApplicationWeb/.debricked-maven-dependencies.tgf"
+      ],
+      "source-dirs": [],
+      "excluded-files": [],
+      "properties": {
+        "java": {
+          "version": "1.8",
+          "classpath": [
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-core",
+              "version": "2.17.1",
+              "path": "Libs/java/1003650583/log4j-core-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-api",
+              "version": "2.17.1",
+              "path": "Libs/java/895242674/log4j-api-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-web",
+              "version": "2.17.1",
+              "path": "Libs/java/-40376264/log4j-web-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.activation",
+              "id": "activation",
+              "version": "1.1",
+              "path": "Libs/java/1084407795/activation-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle.toplink",
+              "id": "toplink",
+              "version": "10.1.3.0.0.060118",
+              "path": "Libs/java/-1908651983/toplink-10.1.3.0.0.060118.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "antlr",
+              "id": "antlr",
+              "version": "2.7.6",
+              "path": "Libs/java/244860424/antlr-2.7.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-logging",
+              "id": "commons-logging",
+              "version": "1.0.4",
+              "path": "Libs/java/918441784/commons-logging-1.0.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.servlet",
+              "id": "jboss-servlet-api_4.0_spec",
+              "version": "2.0.0.Final",
+              "path": "Libs/java/387051887/jboss-servlet-api_4.0_spec-2.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.ejb",
+              "id": "ejb-api",
+              "version": "3.0",
+              "path": "Libs/java/-2028291613/ejb-api-3.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "axis",
+              "id": "axis",
+              "version": "1.2.1",
+              "path": "Libs/java/-498602595/axis-1.2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-awt-util",
+              "version": "1.6",
+              "path": "Libs/java/-365201628/batik-awt-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-dom",
+              "version": "1.6",
+              "path": "Libs/java/-1559677879/batik-dom-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-svggen",
+              "version": "1.6",
+              "path": "Libs/java/-1159827871/batik-svggen-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-util",
+              "version": "1.6",
+              "path": "Libs/java/-1461191209/batik-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-xml",
+              "version": "1.6",
+              "path": "Libs/java/-1045270596/batik-xml-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor",
+              "version": "1.1",
+              "path": "Libs/java/1159924017/castor-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cglib",
+              "id": "cglib-full",
+              "version": "2.0.2",
+              "path": "Libs/java/276514927/cglib-full-2.0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "log4j",
+              "id": "log4j",
+              "version": "1.2.13",
+              "path": "Libs/java/744567578/log4j-1.2.13.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.mail",
+              "id": "mail",
+              "version": "1.5.0-b01",
+              "path": "Libs/java/-1985347889/mail-1.5.0-b01.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-xml",
+              "version": "1.3.1",
+              "path": "Libs/java/1846703806/castor-xml-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-core",
+              "version": "1.3.1",
+              "path": "Libs/java/91169840/castor-core-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cewolf",
+              "id": "cewolf",
+              "version": "1.0",
+              "path": "Libs/java/155985398/cewolf-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "crimson",
+              "id": "crimson",
+              "version": "1.1.3",
+              "path": "Libs/java/1107782946/crimson-1.1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jfreechart",
+              "version": "1.0.0",
+              "path": "Libs/java/-2120414174/jfreechart-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-beanutils",
+              "id": "commons-beanutils",
+              "version": "1.6",
+              "path": "Libs/java/-690614532/commons-beanutils-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-codec",
+              "id": "commons-codec",
+              "version": "1.3",
+              "path": "Libs/java/-155573435/commons-codec-1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle",
+              "id": "classes12",
+              "version": "10.2.0.2.0",
+              "path": "Libs/java/1651691590/classes12-10.2.0.2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-collections",
+              "id": "commons-collections",
+              "version": "2.1",
+              "path": "Libs/java/1915308864/commons-collections-2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-digester",
+              "id": "commons-digester",
+              "version": "1.6",
+              "path": "Libs/java/-1783974596/commons-digester-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-discovery",
+              "id": "commons-discovery",
+              "version": "0.2",
+              "path": "Libs/java/1410430423/commons-discovery-0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-fileupload",
+              "id": "commons-fileupload",
+              "version": "1.1",
+              "path": "Libs/java/1395674169/commons-fileupload-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.commons",
+              "id": "fileupload-ext",
+              "version": "1.0",
+              "path": "Libs/java/1464271671/fileupload-ext-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-httpclient",
+              "id": "commons-httpclient",
+              "version": "3.0",
+              "path": "Libs/java/-606895880/commons-httpclient-3.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "junit",
+              "id": "junit",
+              "version": "3.8.1",
+              "path": "Libs/java/-832331127/junit-3.8.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-io",
+              "id": "commons-io",
+              "version": "1.3.1",
+              "path": "Libs/java/914085596/commons-io-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-lang",
+              "id": "commons-lang",
+              "version": "1.0.1",
+              "path": "Libs/java/-1461776549/commons-lang-1.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-validator",
+              "id": "commons-validator",
+              "version": "1.1.4",
+              "path": "Libs/java/495948161/commons-validator-1.1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "dom4j",
+              "id": "dom4j",
+              "version": "1.4",
+              "path": "Libs/java/-1894560974/dom4j-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jaxen",
+              "id": "jaxen",
+              "version": "1.0-FCS",
+              "path": "Libs/java/-1547489699/jaxen-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "saxpath",
+              "id": "saxpath",
+              "version": "1.0-FCS",
+              "path": "Libs/java/987788743/saxpath-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "msv",
+              "id": "msv",
+              "version": "20020414",
+              "path": "Libs/java/1441152730/msv-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "relaxngDatatype",
+              "id": "relaxngDatatype",
+              "version": "20020414",
+              "path": "Libs/java/1202016448/relaxngDatatype-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "isorelax",
+              "id": "isorelax",
+              "version": "20020414",
+              "path": "Libs/java/1014268482/isorelax-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.lowagie",
+              "id": "itext",
+              "version": "1.4",
+              "path": "Libs/java/-1911926443/itext-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "gnujaxp",
+              "id": "gnujaxp",
+              "version": "1.0.0",
+              "path": "Libs/java/2134189690/gnujaxp-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "releasetopixdto_PIX",
+              "id": "releasetopixdto_PIX",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/1479235277/releasetopixdto_PIX-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "javax.transaction-api",
+              "version": "1.2",
+              "path": "Libs/java/-1750301811/javax.transaction-api-1.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jakarta.persistence",
+              "id": "jakarta.persistence-api",
+              "version": "2.2.3.redhat-00001",
+              "path": "Libs/java/475284913/jakarta.persistence-api-2.2.3.redhat-00001.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.3_spec",
+              "version": "2.0.0.Final-redhat-00002",
+              "path": "Libs/java/-2031480927/jboss-transaction-api_1.3_spec-2.0.0.Final-redhat-00002.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss",
+              "id": "jboss-ejb-client",
+              "version": "4.0.37.Final",
+              "path": "Libs/java/-1676063369/jboss-ejb-client-4.0.37.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-1664205020/jboss-marshalling-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling-river",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-665005595/jboss-marshalling-river-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-api",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1595692252/xnio-api-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.threads",
+              "id": "jboss-threads",
+              "version": "2.3.3.Final",
+              "path": "Libs/java/-1742218802/jboss-threads-2.3.3.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-nio",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1495687126/xnio-nio-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.remoting",
+              "id": "jboss-remoting",
+              "version": "5.0.17.Final",
+              "path": "Libs/java/-621146743/jboss-remoting-5.0.17.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.logging",
+              "id": "jboss-logging",
+              "version": "3.4.0.Final",
+              "path": "Libs/java/-1119607077/jboss-logging-3.4.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.ejb",
+              "id": "jboss-ejb-api_3.2_spec",
+              "version": "1.0.0.Final",
+              "path": "Libs/java/1861259773/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.2_spec",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-556380932/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.client",
+              "id": "wildfly-client-config",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-1681974247/wildfly-client-config-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.common",
+              "id": "wildfly-common",
+              "version": "1.5.1.Final",
+              "path": "Libs/java/293512385/wildfly-common-1.5.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.discovery",
+              "id": "wildfly-discovery-client",
+              "version": "1.2.1.Final",
+              "path": "Libs/java/-702350206/wildfly-discovery-client-1.2.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.security",
+              "id": "wildfly-elytron",
+              "version": "1.1.5.Final",
+              "path": "Libs/java/-1637568932/wildfly-elytron-1.1.5.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.transaction",
+              "id": "wildfly-transaction-client",
+              "version": "1.1.10.Final",
+              "path": "Libs/java/291397083/wildfly-transaction-client-1.1.10.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly",
+              "id": "wildfly-naming-client",
+              "version": "1.0.13.Final",
+              "path": "Libs/java/-2138662211/wildfly-naming-client-1.0.13.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.jbossts",
+              "id": "jbossjta",
+              "version": "4.16.6.Final",
+              "path": "Libs/java/-780379827/jbossjta-4.16.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "struts",
+              "id": "struts",
+              "version": "1.2.7",
+              "path": "Libs/java/1629958275/struts-1.2.7.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-chain",
+              "id": "commons-chain",
+              "version": "1.0",
+              "path": "Libs/java/699520118/commons-chain-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "oro",
+              "id": "oro",
+              "version": "2.0.8",
+              "path": "Libs/java/371729795/oro-2.0.8.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-el",
+              "version": "1.2.9",
+              "path": "Libs/java/1073831191/struts-el-1.2.9.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-legacy",
+              "version": "1.1",
+              "path": "Libs/java/-374467699/struts-legacy-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "poi",
+              "id": "poi-2.5.1-final",
+              "version": "20040804",
+              "path": "Libs/java/-822940489/poi-2.5.1-final-20040804.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jcommon",
+              "version": "1.0.0",
+              "path": "Libs/java/-295011955/jcommon-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jdbc.sybase",
+              "id": "jconn3",
+              "version": "6.0",
+              "path": "Libs/java/759479032/jconn3-6.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jdom",
+              "id": "jdom",
+              "version": "1.0",
+              "path": "Libs/java/-757720962/jdom-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.servlet.jsp",
+              "id": "jboss-jsp-api_2.3_spec",
+              "version": "2.0.0.Final-redhat-00001",
+              "path": "Libs/java/1166023610/jboss-jsp-api_2.3_spec-2.0.0.Final-redhat-00001.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.json",
+              "id": "json",
+              "version": "20080701",
+              "path": "Libs/java/24534723/json-20080701.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.xml.bind",
+              "id": "jsr173_api",
+              "version": "1.0",
+              "path": "Libs/java/-55215697/jsr173_api-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.servlet",
+              "id": "jstl",
+              "version": "1.1.2",
+              "path": "Libs/java/384955575/jstl-1.1.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "jta",
+              "version": "1.1",
+              "path": "Libs/java/-230520690/jta-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.poi",
+              "id": "poi",
+              "version": "3.0.2-FINAL",
+              "path": "Libs/java/-498375963/poi-3.0.2-FINAL.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "taglibs",
+              "id": "standard",
+              "version": "1.1.2",
+              "path": "Libs/java/-1804348152/standard-1.1.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "stax",
+              "id": "stax-api",
+              "version": "1.0.1",
+              "path": "Libs/java/1171951206/stax-api-1.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "wsdl4j",
+              "id": "wsdl4j",
+              "version": "1.5.1",
+              "path": "Libs/java/928819710/wsdl4j-1.5.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.woodstox",
+              "id": "wstx-asl",
+              "version": "3.2.0",
+              "path": "Libs/java/-1092710262/wstx-asl-3.2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "ooservice-ws",
+              "id": "ooservice-ws",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/666522553/ooservice-ws-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "pims-ws",
+              "id": "pims-ws",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/1788226525/pims-ws-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "PIXApplicationEJB",
+              "id": "PIXApplicationEJB",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/-572050279/PIXApplicationEJB-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xerces",
+              "id": "xercesImpl",
+              "version": "2.4.0",
+              "path": "Libs/java/-1154090081/xercesImpl-2.4.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xerces",
+              "id": "xerces",
+              "version": "1.2.3",
+              "path": "Libs/java/-1427908225/xerces-1.2.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-aegis",
+              "version": "1.2.6",
+              "path": "Libs/java/-533139268/xfire-aegis-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-core",
+              "version": "1.2.6",
+              "path": "Libs/java/-1898662896/xfire-core-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.ws.commons",
+              "id": "XmlSchema",
+              "version": "1.1",
+              "path": "Libs/java/-1832626825/XmlSchema-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jdom",
+              "id": "jdom",
+              "version": "1.0",
+              "path": "Libs/java/-662612106/jdom-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "net.java.dev.stax-utils",
+              "id": "stax-utils",
+              "version": "20040917",
+              "path": "Libs/java/675344982/stax-utils-20040917.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-annotations",
+              "version": "1.2.6",
+              "path": "Libs/java/-1156058315/xfire-annotations-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-attributes",
+              "id": "commons-attributes-api",
+              "version": "2.1",
+              "path": "Libs/java/346314471/commons-attributes-api-2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "ant",
+              "id": "ant",
+              "version": "1.5",
+              "path": "Libs/java/-677799021/ant-1.5.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "qdox",
+              "id": "qdox",
+              "version": "1.5",
+              "path": "Libs/java/-1258218243/qdox-1.5.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-java5",
+              "version": "1.2.6",
+              "path": "Libs/java/-329794494/xfire-java5-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-jaxws",
+              "version": "1.2.6",
+              "path": "Libs/java/-772232916/xfire-jaxws-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.xml.ws",
+              "id": "jaxws-api",
+              "version": "2.0",
+              "path": "Libs/java/1706533768/jaxws-api-2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.xml.bind",
+              "id": "jaxb-api",
+              "version": "2.0",
+              "path": "Libs/java/1489130623/jaxb-api-2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-jaxb2",
+              "version": "1.2.6",
+              "path": "Libs/java/-571599008/xfire-jaxb2-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.sun.xml.bind",
+              "id": "jaxb-xjc",
+              "version": "2.0.1",
+              "path": "Libs/java/1942096114/jaxb-xjc-2.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.sun.xml.bind",
+              "id": "jaxb-impl",
+              "version": "2.0.1",
+              "path": "Libs/java/1335011541/jaxb-impl-2.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.sun.xml.messaging.saaj",
+              "id": "saaj-impl",
+              "version": "1.3",
+              "path": "Libs/java/1283215278/saaj-impl-1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-generator",
+              "version": "1.2.6",
+              "path": "Libs/java/795547458/xfire-generator-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-xmlbeans",
+              "version": "1.2.6",
+              "path": "Libs/java/-276711105/xfire-xmlbeans-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xmlbeans",
+              "id": "xbean",
+              "version": "2.2.0",
+              "path": "Libs/java/333262225/xbean-2.2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.xml.soap",
+              "id": "saaj-api",
+              "version": "1.3",
+              "path": "Libs/java/-123778647/saaj-api-1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xfire",
+              "id": "xfire-jsr181-api",
+              "version": "1.0-M1",
+              "path": "Libs/java/-394729566/xfire-jsr181-api-1.0-M1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.xfire",
+              "id": "xfire-spring",
+              "version": "1.2.6",
+              "path": "Libs/java/478800062/xfire-spring-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.xbean",
+              "id": "xbean-spring",
+              "version": "2.8",
+              "path": "Libs/java/110630305/xbean-spring-2.8.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.springframework",
+              "id": "spring",
+              "version": "1.2.6",
+              "path": "Libs/java/2009926988/spring-1.2.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle.xml",
+              "id": "xml",
+              "version": "10.2.0.2",
+              "path": "Libs/java/-1940051717/xml-10.2.0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xml-apis",
+              "id": "xml-apis",
+              "version": "1.0.b2",
+              "path": "Libs/java/-193169146/xml-apis-1.0.b2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle",
+              "id": "xmlparserv2",
+              "version": "10.1.0.4.2",
+              "path": "Libs/java/-1428559394/xmlparserv2-10.1.0.4.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "net.sourceforge.javawebparts",
+              "id": "javawebparts-core",
+              "version": "1.0-beta4",
+              "path": "Libs/java/-2031510712/javawebparts-core-1.0-beta4.jar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "root": "Src/PIXApplication",
+      "filesToScan": [
+        "Src/PIXApplication/pom.xml",
+        "Src/PIXApplication/.debricked-maven-dependencies.tgf"
+      ],
+      "source-dirs": [],
+      "excluded-files": [],
+      "properties": {
+        "java": {
+          "classpath": [
+            {
+              "type": "artifact",
+              "group": "PIXApplicationEJB",
+              "id": "PIXApplicationEJB",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/-572050279/PIXApplicationEJB-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-core",
+              "version": "2.17.1",
+              "path": "Libs/java/1003650583/log4j-core-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-api",
+              "version": "2.17.1",
+              "path": "Libs/java/895242674/log4j-api-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.logging.log4j",
+              "id": "log4j-web",
+              "version": "2.17.1",
+              "path": "Libs/java/-40376264/log4j-web-2.17.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.activation",
+              "id": "activation",
+              "version": "1.1",
+              "path": "Libs/java/1084407795/activation-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle.toplink",
+              "id": "toplink",
+              "version": "10.1.3.0.0.060118",
+              "path": "Libs/java/-1908651983/toplink-10.1.3.0.0.060118.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "antlr",
+              "id": "antlr",
+              "version": "2.7.6",
+              "path": "Libs/java/244860424/antlr-2.7.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-logging",
+              "id": "commons-logging",
+              "version": "1.0.4",
+              "path": "Libs/java/918441784/commons-logging-1.0.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.servlet",
+              "id": "jboss-servlet-api_4.0_spec",
+              "version": "2.0.0.Final",
+              "path": "Libs/java/387051887/jboss-servlet-api_4.0_spec-2.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "axis",
+              "id": "axis",
+              "version": "1.2.1",
+              "path": "Libs/java/-498602595/axis-1.2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "wsdl4j",
+              "id": "wsdl4j",
+              "version": "1.5.1",
+              "path": "Libs/java/928819710/wsdl4j-1.5.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-awt-util",
+              "version": "1.6",
+              "path": "Libs/java/-365201628/batik-awt-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-dom",
+              "version": "1.6",
+              "path": "Libs/java/-1559677879/batik-dom-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-svggen",
+              "version": "1.6",
+              "path": "Libs/java/-1159827871/batik-svggen-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-util",
+              "version": "1.6",
+              "path": "Libs/java/-1461191209/batik-util-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "batik",
+              "id": "batik-xml",
+              "version": "1.6",
+              "path": "Libs/java/-1045270596/batik-xml-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor",
+              "version": "1.1",
+              "path": "Libs/java/1159924017/castor-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cglib",
+              "id": "cglib-full",
+              "version": "2.0.2",
+              "path": "Libs/java/276514927/cglib-full-2.0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "jta",
+              "version": "1.0.1B",
+              "path": "Libs/java/1444285616/jta-1.0.1B.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "log4j",
+              "id": "log4j",
+              "version": "1.2.13",
+              "path": "Libs/java/744567578/log4j-1.2.13.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xerces",
+              "id": "xerces",
+              "version": "1.4.0",
+              "path": "Libs/java/-1427914244/xerces-1.4.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.mail",
+              "id": "mail",
+              "version": "1.5.0-b01",
+              "path": "Libs/java/-1985347889/mail-1.5.0-b01.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-xml",
+              "version": "1.3.1",
+              "path": "Libs/java/1846703806/castor-xml-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.codehaus.castor",
+              "id": "castor-core",
+              "version": "1.3.1",
+              "path": "Libs/java/91169840/castor-core-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "cewolf",
+              "id": "cewolf",
+              "version": "1.0",
+              "path": "Libs/java/155985398/cewolf-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "crimson",
+              "id": "crimson",
+              "version": "1.1.3",
+              "path": "Libs/java/1107782946/crimson-1.1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jfreechart",
+              "version": "1.0.0",
+              "path": "Libs/java/-2120414174/jfreechart-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jfree",
+              "id": "jcommon",
+              "version": "1.0.0",
+              "path": "Libs/java/-295011955/jcommon-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-beanutils",
+              "id": "commons-beanutils",
+              "version": "1.6",
+              "path": "Libs/java/-690614532/commons-beanutils-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-codec",
+              "id": "commons-codec",
+              "version": "1.3",
+              "path": "Libs/java/-155573435/commons-codec-1.3.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.oracle",
+              "id": "classes12",
+              "version": "10.2.0.2.0",
+              "path": "Libs/java/1651691590/classes12-10.2.0.2.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-collections",
+              "id": "commons-collections",
+              "version": "2.1",
+              "path": "Libs/java/1915308864/commons-collections-2.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-digester",
+              "id": "commons-digester",
+              "version": "1.6",
+              "path": "Libs/java/-1783974596/commons-digester-1.6.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "xml-apis",
+              "id": "xml-apis",
+              "version": "1.0.b2",
+              "path": "Libs/java/-193169146/xml-apis-1.0.b2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-discovery",
+              "id": "commons-discovery",
+              "version": "0.2",
+              "path": "Libs/java/1410430423/commons-discovery-0.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-fileupload",
+              "id": "commons-fileupload",
+              "version": "1.0",
+              "path": "Libs/java/1395674166/commons-fileupload-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-httpclient",
+              "id": "commons-httpclient",
+              "version": "3.0",
+              "path": "Libs/java/-606895880/commons-httpclient-3.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "junit",
+              "id": "junit",
+              "version": "3.8.1",
+              "path": "Libs/java/-832331127/junit-3.8.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-io",
+              "id": "commons-io",
+              "version": "1.3.1",
+              "path": "Libs/java/914085596/commons-io-1.3.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-lang",
+              "id": "commons-lang",
+              "version": "1.0.1",
+              "path": "Libs/java/-1461776549/commons-lang-1.0.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-validator",
+              "id": "commons-validator",
+              "version": "1.1.4",
+              "path": "Libs/java/495948161/commons-validator-1.1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "dom4j",
+              "id": "dom4j",
+              "version": "1.4",
+              "path": "Libs/java/-1894560974/dom4j-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jaxen",
+              "id": "jaxen",
+              "version": "1.0-FCS",
+              "path": "Libs/java/-1547489699/jaxen-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "saxpath",
+              "id": "saxpath",
+              "version": "1.0-FCS",
+              "path": "Libs/java/987788743/saxpath-1.0-FCS.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "msv",
+              "id": "msv",
+              "version": "20020414",
+              "path": "Libs/java/1441152730/msv-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "relaxngDatatype",
+              "id": "relaxngDatatype",
+              "version": "20020414",
+              "path": "Libs/java/1202016448/relaxngDatatype-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "isorelax",
+              "id": "isorelax",
+              "version": "20020414",
+              "path": "Libs/java/1014268482/isorelax-20020414.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "com.lowagie",
+              "id": "itext",
+              "version": "1.4",
+              "path": "Libs/java/-1911926443/itext-1.4.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "gnujaxp",
+              "id": "gnujaxp",
+              "version": "1.0.0",
+              "path": "Libs/java/2134189690/gnujaxp-1.0.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "releasetopixdto_PIX",
+              "id": "releasetopixdto_PIX",
+              "version": "0.0.1-SNAPSHOT",
+              "path": "Libs/java/1479235277/releasetopixdto_PIX-0.0.1-SNAPSHOT.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "javax.transaction",
+              "id": "javax.transaction-api",
+              "version": "1.2",
+              "path": "Libs/java/-1750301811/javax.transaction-api-1.2.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "jakarta.persistence",
+              "id": "jakarta.persistence-api",
+              "version": "2.2.3.redhat-00001",
+              "path": "Libs/java/475284913/jakarta.persistence-api-2.2.3.redhat-00001.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.3_spec",
+              "version": "2.0.0.Final-redhat-00002",
+              "path": "Libs/java/-2031480927/jboss-transaction-api_1.3_spec-2.0.0.Final-redhat-00002.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss",
+              "id": "jboss-ejb-client",
+              "version": "4.0.37.Final",
+              "path": "Libs/java/-1676063369/jboss-ejb-client-4.0.37.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-1664205020/jboss-marshalling-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.marshalling",
+              "id": "jboss-marshalling-river",
+              "version": "2.0.6.Final",
+              "path": "Libs/java/-665005595/jboss-marshalling-river-2.0.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-api",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1595692252/xnio-api-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.threads",
+              "id": "jboss-threads",
+              "version": "2.3.3.Final",
+              "path": "Libs/java/-1742218802/jboss-threads-2.3.3.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.xnio",
+              "id": "xnio-nio",
+              "version": "3.8.2.Final",
+              "path": "Libs/java/1495687126/xnio-nio-3.8.2.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.remoting",
+              "id": "jboss-remoting",
+              "version": "5.0.17.Final",
+              "path": "Libs/java/-621146743/jboss-remoting-5.0.17.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.logging",
+              "id": "jboss-logging",
+              "version": "3.4.0.Final",
+              "path": "Libs/java/-1119607077/jboss-logging-3.4.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.ejb",
+              "id": "jboss-ejb-api_3.2_spec",
+              "version": "1.0.0.Final",
+              "path": "Libs/java/1861259773/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.spec.javax.transaction",
+              "id": "jboss-transaction-api_1.2_spec",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-556380932/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.client",
+              "id": "wildfly-client-config",
+              "version": "1.0.1.Final",
+              "path": "Libs/java/-1681974247/wildfly-client-config-1.0.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.common",
+              "id": "wildfly-common",
+              "version": "1.5.1.Final",
+              "path": "Libs/java/293512385/wildfly-common-1.5.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.discovery",
+              "id": "wildfly-discovery-client",
+              "version": "1.2.1.Final",
+              "path": "Libs/java/-702350206/wildfly-discovery-client-1.2.1.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.security",
+              "id": "wildfly-elytron",
+              "version": "1.1.5.Final",
+              "path": "Libs/java/-1637568932/wildfly-elytron-1.1.5.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly.transaction",
+              "id": "wildfly-transaction-client",
+              "version": "1.1.10.Final",
+              "path": "Libs/java/291397083/wildfly-transaction-client-1.1.10.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.wildfly",
+              "id": "wildfly-naming-client",
+              "version": "1.0.13.Final",
+              "path": "Libs/java/-2138662211/wildfly-naming-client-1.0.13.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.jboss.jbossts",
+              "id": "jbossjta",
+              "version": "4.16.6.Final",
+              "path": "Libs/java/-780379827/jbossjta-4.16.6.Final.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "struts",
+              "id": "struts",
+              "version": "1.2.7",
+              "path": "Libs/java/1629958275/struts-1.2.7.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "commons-chain",
+              "id": "commons-chain",
+              "version": "1.0",
+              "path": "Libs/java/699520118/commons-chain-1.0.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "oro",
+              "id": "oro",
+              "version": "2.0.8",
+              "path": "Libs/java/371729795/oro-2.0.8.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-el",
+              "version": "1.2.9",
+              "path": "Libs/java/1073831191/struts-el-1.2.9.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "org.apache.struts",
+              "id": "struts-legacy",
+              "version": "1.1",
+              "path": "Libs/java/-374467699/struts-legacy-1.1.jar"
+            },
+            {
+              "type": "artifact",
+              "group": "poi",
+              "id": "poi-2.5.1-final",
+              "version": "20040804",
+              "path": "Libs/java/-822940489/poi-2.5.1-final-20040804.jar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "root": "Src/",
+      "filesToScan": [
+        "Src/pom.xml",
+        "Src/.debricked-maven-dependencies.tgf"
+      ],
+      "source-dirs": [],
+      "excluded-files": [],
+      "properties": {
+        "java": {
+          "classpath": []
+        }
+      }
+    }
+  ]
+}
